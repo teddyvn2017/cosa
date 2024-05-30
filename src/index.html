@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="./output.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="relative left-0 top-0 h-auto w-full bg-mau_xanh z-30">
+
+        <!-- top nav -->
+        <div class="flex flex-row py-[16px] gap-8 h-[100%] w-full max-w-[1280px] 
+                mx-auto text-mau_trang md:justify-end lg:justify-end justify-center container">
+            <div class="flex flex-row gap-2">
+                <i class="ri-mail-line"></i>
+                <p>cosa@gmail.com</p>
+            </div>
+            <div class="flex flex-row gap-2">
+                <i class="ri-phone-line"></i>
+                <p>0902.xxx.xxx</p>
+            </div>
+        </div>
+
+        <div class="bg-mau_trang p-4 drop-shadow-lg">
+            <div class="flex flex-row mx-auto max-w-[1280px] justify-between items-center relative">
+                
+                <!-- Logo -->
+                <div class="flex flex-row md:gap-[0.5rem] gap-[.5rem] items-center h-[3rem]">
+                    <img src="img/logo.png" alt="logo" class="md:max-w-[48px] md:max-h-[48px]max-w-[40px] max-h-[40px]">
+                    <div class="flex flex-col leading-3 text-[14px] md:text-xs lg:text-base gap-[.5rem] md:gap-[.25rem]">
+                        <h3 class="font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
+                        <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
+                    </div>
+                </div>
+                
+                <!-- Menu desktop -->
+                <div class="hidden md:flex items-center menu-container">
+                    <div class="menu-background"></div>
+                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-[14px] lg:text-base font-sans">
+                        <li>
+                            <a href="#" class="nav__link active font-bold">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Themes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                        <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
+                            <a href="#">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+              
+
+                <!-- <button id="menuToggle" class="md:hidden flex flex-col gap-[6px]">
+                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
+                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
+                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
+                </button> -->
+
+
+                <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="32px" id="menuToggle">
+                    <path d="M10,2 L2,2" class="upper" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                    <path d="M2,5 L10,5" class="middle" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                    <path d="M10,8 L2,8" class="lower" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                </svg>
+              
+                <!-- menu mobile -->
+                <div class="md:hidden absolute top-[4rem] -left-[1rem] w-full h-0">
+                   
+                    <ul class="flex flex-col gap-[2.5rem] items-center pt-[3rem]
+                            font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile">
+                        <li>
+                            <a href="#" class="active font-bold text-2xl">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link-mobile">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link-mobile">Themes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link-mobile">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link-mobile">Contact</a>
+                        </li>
+                        <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
+                            <a href="#">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- Main menu -->
+    </nav>
+
+    <section class="hero w-full flex bg-hero-pattern bg-no-repeat bg-cover lg:mt-[8rem] md:mt-[4rem]">
+        <div class="container max-w-[1280px] flex flex-col md:flex-row 
+            md:mt-[3rem] lg:mt-[1rem] mt-[6rem] pt-[4rem]
+            justify-center items-center align-top">
+            <div class="rounded-[2rem] text-mau_trang basis-2/4">
+                <h1 class="text-4xl font-bold text-mau_do">Study Abroad Programs</h1>
+                <h1 class="text-4xl font-bold text-mau_xanh mt-[1rem]">All Over The World</h1>
+                <div class="py-[2rem] basis-2/4">
+                    <p class="text-xl">
+                        Praesentium ipsa al
+                        ias voluptatem eius eveniet doloremque tempore, voluptatibus, consequatur quis
+                        expedita
+                        deserunt.
+                        Provident vero totam placeat vel a quisquam amet debitis.
+                    </p>
+                    <button class="bg-mau_do text-mau_trang rounded-md p-4 mt-[2rem]">Tìm hiểu thêm</button>
+                </div>
+    
+            </div>
+            <div class="basis-2/4">
+                <img src="img/hero_student.png" alt="image" class="img-responsive">
+            </div>
+        </div>          
+    </section>
+    
+    <main class="main container max-w-[1280px]">
+                      
+        <section class="w-full bg-no-repeat bg-cover mt-[5rem] relative">
+            <div class="flex md:flex-row flex-col gap-[3rem]">
+                <!-- <div class="hidden absolute z-0 -top-[2rem] -right-[2rem] w-[80px] h-[80px]
+                            md:top-[-3rem] md:right-[-3rem]
+                            md:w-[100px] md:h-[100px]
+                            lg:w-[140px] lg:h-[140px]
+                            bg-mau_xanh_300 rounded-full" id="hinh_tron_xanh"></div> -->
+                <div class="relative bg-mau_xanh rounded-[.75rem] text-mau_trang p-8 w-full 
+                    md:max-w-none z-10 flex-1 h-fit" id="about__us">
+                    <h3 class="font-bold">About us</h3>
+                    <h1 class="text-3xl mt-[1rem] leading-normal">
+                        Lorem ipsum dolor sit amet consectetur lorem.
+                    </h1>
+                    <p class="mt-[.5rem]">
+                        Lorem ipsum dolor sit amet consectetur. Vitae sed viverra et imperdiet non etiam. Dictum tortor sed
+                        mollis viverra.
+                        Purus etiam sed enim nullam id aliquam blandit ac ut. Nibh ultrices nulla nec ac lectus diam
+                        aliquet. Dictum tortor sed
+                        mollis viverra. Purus etiam sed enim nullam id aliquam blandit ac ut. Nibh ultrices nulla nec ac
+                        lectus
+                        diam aliquet.
+                    </p>
+                    <button class="bg-mau_hong text-mau_do px-4 py-2 mt-[2rem] rounded-[.5rem]">
+                        Explore
+                        <i class="ri-arrow-drop-right-line"></i>
+                    </button>
+                </div>
+        
+                <div class="flex-1">
+                    <img src="img/aboutus_img.png" alt="image" class="w-full h-full object-cover z-20">
+                </div>
+            </div>
+        </section>
+    
+        <section class="mt-[5rem]">
+          
+            <h2 class="text-4xl text-mau_xanh font-bold">Top Destinations</h2>
+    
+            <div class="mt-[1.25rem] flex flex-col md:flex-row py-[2rem] swiper justify-center">
+    
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/can.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                Vancouver, CA
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/big_ben.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                London, UK
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/ny.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                New York, USA
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/melbourne.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem]">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                Melbourne, AU
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/can.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                Vancouver, CA
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/big_ben.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                London, UK
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/ny.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                New York, USA
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-lg">
+                        <img src="img/melbourne.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem]">
+                        <div
+                            class="flex flex-row justify-between absolute bottom-[-.75rem] left-0 z-20 w-full p-4 bg-mau_trang  rounded-bl-[.75rem] rounded-br-[.75rem]">
+                            <p class="font-bold text-mau_xanh">
+                                Melbourne, AU
+                            </p>
+                            <i class="ri-arrow-right-line text-mau_do"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="custom-swiper-button-prev">
+                    <i class="ri-arrow-left-s-line arrow__left"></i>
+                </div>
+                <div class="custom-swiper-button-next">
+                    <i class="ri-arrow-right-s-line arrow__right"></i>
+                </div>    
+            </div>       
+        </section>
+        
+        <section class="mt-[5rem]">
+            <div class="mb-[2rem] bg-mau_trang">
+                <h2 class="text-mau_xanh text-4xl font-bold mb-[2rem]">Popular Majors</h2>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                    
+                    <div class="md:border-r-2 md:border-b-2 md:border-mau_xanh px-[2rem] pb-[1rem] pt-[1rem] relative">                        
+                        <div class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] group
+                                                                            p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Bussiness</h1>
+                            <img src="img/bussiness.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+                    
+                            <button class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                                    rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>
+                    
+                        </div>
+                        <div class="hidden md:block lg:block absolute top-0 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full" id="cham_tron_xanh">
+                        </div>
+                        <div class="hidden md:block lg:block absolute -bottom-4 -left-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full" id="cham_tron_xanh">
+                        </div>
+                    </div>
+                            
+                    <div class="md:border-r-0 lg:border-r-2
+                                px-[2rem] pt-[1rem] pb-[1rem]  
+                              
+                                border-b-2 border-mau_xanh 
+                                relative">
+                        <div class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] group
+                                                        p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Computer Sciene</h1>
+                            <img src="img/computer.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+
+                            <button class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i  class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>
+                            
+                        </div>
+                        <div class="hidden lg:block absolute top-0 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                        <div class="hidden lg:hidden md:block absolute -bottom-4 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="border-b-2 border-mau_xanh px-[2rem] pb-[1rem] pt-[1rem] 
+                                md:border-r-2 
+                                 lg:border-r-0 relative">
+                        <div class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Economic</h1>
+                            <img src="img/chart.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+                    
+                            <button class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                                    rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>
+                    
+                        </div>
+                        <div class="hidden lg:block absolute -bottom-4 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                        <div class="hidden lg:hidden md:block  absolute -bottom-4 -left-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full"
+                            id="cham_tron_xanh">
+                        </div>
+                    </div>
+
+                    <div class="border-b-2 border-mau_xanh md:border-r-0 lg:border-r-2 px-[2rem] pt-[1rem] pb-[1rem]  
+                                 lg:border-b-0 md:border-b-2  relative">
+                        <div class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Engineering</h1>
+                            <img src="img/engineering.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+                    
+                            <button class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                                                        rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>
+                    
+                        </div>
+                        <div class="hidden absolute -bottom-2 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                        <div
+                            class="hidden lg:hidden md:block absolute -bottom-4 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                        <div class="hidden lg:block absolute -bottom-4 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+
+                        
+                    </div>
+        
+                    <div class="lg:border-r-2 md:border-mau_xanh px-[2rem] pt-[1rem] pb-[1rem] 
+                            md:border-b-0  md:border-r-2  border-b-2 border-mau_xanh relative">
+                        <div class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Finance</h1>
+                            <img src="img/finance.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+                    
+                            <button class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                                                                            rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>
+                    
+                        </div>
+                        <div class="hidden absolute -bottom-2 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                        <div class="hidden lg:block md:block absolute -bottom-4 -right-2 transform translate-y-[-50%] w-4 h-4 bg-mau_xanh rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="px-[2rem] pt-[1rem] pb-[1rem] relative">
+                        <div
+                            class="major__card flex flex-col justify-center cursor-pointer rounded-[.75rem] group
+                                                                                                                                        p-[2rem] mx-auto">
+                            <h1 class="text-2xl text-mau_xanh text-center font-bold">Liberty Arts</h1>
+                            <img src="img/arts.svg" alt="image" class="mx-auto w-[60%] pt-[2rem]">
+                    
+                            <button
+                                class="major__btn bg-gray-200 text-gray-600 px-[2rem] py-[.75rem] 
+                                                                                                                rounded-[.75rem] mx-auto font-semibold">
+                                Learn more
+                                <i class="arrow__rigth ri-arrow-right-line text-gray-600 absolute"></i>
+                            </button>                    
+                        </div>                        
+                    </div>                    
+                </div>
+        
+                <div class="text-center mt-[3rem]">
+                    <h3 class="text-4xl font-semibold text-mau_xanh">Maximize Your Potentials & Possibilities</h3>
+                    <h4 class="text-xl text-gray-600 mt-[1rem] md:mt-[0.5rem]">Learn the secrets to Life Success, these people have got the key.​</h4>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mt-[6rem] relative w-[100%]">
+            
+            <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center">
+                <div  class="flex flex-col basis-2/4">
+                    <h3 class="text-mau_xanh_300 text-2xl">TESTIMONIAL</h3>
+                    <h1 class="text-mau_xanh font-bold text-4xl mt-[1rem] mb-[2rem]">What They Say?</h1>
+                    <p class="text-mau_xanh_300 leading-7 md:max-w-[80%] lg:max-w-[80%] w-[100%]">
+                        Lorem ipsum dolor sit amet consectetur. Vulputate gravida habitant a egestas sagittis turpis sed nisl.
+                        Lorem ipsum dolor sit amet consectetur. Pharetra in ut enim dignissim eu egestas vehicula. Sed mauris sit leo urna
+                        suspendisse sit velit sem.
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/testimonial.png" alt="image" class="rounded-[1rem] w-fit basis-2/4">
+                </div>
+            </div>
+            <img src="img/hong_phan_testimonial.png" alt="image" class="absolute z-0 left-0 top-0">
+        </section>
+        
+        <section class="mt-[6rem] relative">
+                  
+            <h1 class="text-4xl text-mau_do text-center font-bold">Lastest News and Resources</h1>
+            <h3 class="text-xl text-mau_do text-center mt-[1rem] md:mt-[.5rem]">See the developments that have occurred to Skillines in the world</h3>
+        
+            <div class="flex md:flex-row flex-col mt-[2rem]">
+                <div class="flex flex-col lg:flex-row gap-[32px]">
+                    <div class="flex flex-col md:basis-2/4 shadow-lg p-[1rem] rounded-[1rem] bg-mau_trang w-full" id="cot_trai">
+                        <img src="img/hot_news.jpg" alt="image" class="rounded-[1rem] shadow-md">
+                        <button class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
+                                w-fit justify-start rounded-[1rem] mt-[1rem]">NEWS</button>
+                        <h4 class="text-mau_xanh font-bold mt-[1.25rem] text-xl mb-[1.5rem]">
+                            Lorem ipsum dolor sit amet consectetur. posuere cras purus.
+                        </h4>
+                        <p class="text-mau_xanh text-base leading-5">
+                            Lorem ipsum dolor sit amet consectetur. Ut aliquet imperdiet nullam a mi mattis commodo vitae sit.
+                            Enim ullamcorper
+                            aliquet tristique eget etiam aliquet.
+                        </p>
+                        <p class="font-semibold text-base underline text-mau_xanh mt-[2rem]">
+                            Đọc tiếp
+                        </p>
+                    </div>
+        
+                    <div class="flex flex-col gap-[2rem]" id="cot_phai">
+                        
+                        <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
+                                                            shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[.75rem]">
+                            <img src="img/news1.png" alt="image" class="md:w-[200px] w-full rounded-[.5rem]">
+                            <div class="flex flex-col">
+                                <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                                    Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices duis
+                                    accumsan.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
+                                    shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[.75rem]">
+                            <img src="img/news2.jpg" alt="image" class="md:w-[200px] w-full rounded-[.5rem]">
+                            <div class="flex flex-col">
+                                <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                                    Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices duis
+                                    accumsan.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
+                                                            shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[.75rem]">
+                            <img src="img/news3.jpg" alt="image" class="md:w-[200px] w-full rounded-[.75rem]">
+                            <div class="flex flex-col">
+                                <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                                    Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices duis
+                                    accumsan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
+        <div class="container flex flex-col md:flex-row max-w-[1280px] pt-[2rem] pb-[2rem] gap-[3rem] justify-around">
+            <div class="flex flex-row gap-[0.5rem] align-middle w-full">
+                <img src="img/logo.png" alt="logo" class="max-w-[36px] max-h-[36px]">
+                <div class="flex flex-col leading-3">
+                    <h3 class="text-base font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
+                    <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
+                </div>
+            </div>
+            <div class="flex sm:flex-row justify-between gap-[2rem] w-full">
+                <div class="flex flex-col text-base text-mau_xanh min-w-[20%]">
+                    <h4 class="font-bold">Navigation</h4>
+                    <ul class="mt-[1rem] flex flex-col gap-[.75rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col text-base text-mau_xanh min-w-[20%]">
+                    <h4 class="font-bold">Navigation</h4>
+                    <ul class="mt-[1rem] flex flex-col gap-[.75rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu_mobile_anim.js"></script>
+</body>
+
+</html>

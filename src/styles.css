@@ -1,0 +1,237 @@
+/* Popular Majors */
+/* Hover */
+
+/* .arrow__right {
+    transform: translate .6s ease-in-out;
+} */
+
+/* Container của menu */
+.menu-container {
+    position: relative;
+}
+
+/* CSS cho các liên kết trong menu */
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+/* Background di chuyển */
+.menu-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #e23b32;
+    /* Màu nền cho background di chuyển */
+    transition: width 0.3s ease, left 0.3s ease;
+    border-radius: .5rem;
+    z-index: 0;
+}
+
+.nav__link.active {
+    color:#fff;
+    background-color: #e23b32;
+    border-radius: .5rem;
+}
+
+/* Trạng thái hover thay đổi màu chữ */
+.nav__link:hover {
+    color: #fff;
+    cursor: pointer;
+    /* font-weight: bold; */
+    /* Màu chữ khi hover */
+}
+
+/* Container của menu */
+.menu-mobile-container {
+    position: relative;
+}
+
+/* Menu di động */
+
+/* CSS cho các liên kết di động */
+.nav__link-mobile {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: .5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Trạng thái hover thay đổi màu nền và màu chữ */
+.nav__link-mobile:hover {
+    background-color: #e23b32;
+    /* Màu nền đỏ khi hover */
+    color: #ffffff;
+    /* Màu chữ trắng khi hover */
+}
+
+/* Major card */
+
+.major__card {
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); */
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.major__card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.major__card img {
+    transition: all .4s ease-in-out;
+}
+
+.major__card:hover img {
+    transform: translateY(-12px) scale(0.9);
+    /* transform: translateY(-12px); */
+}
+
+.major__btn {
+
+    transition: all .6s ease-in-out;
+    opacity: 0;
+}
+
+.arrow__rigth {
+    transition: all .6s ease-in-out;
+    /* transform: translate(); */
+}
+
+.major__card:hover .major__btn {
+    color: #fff;
+    background-color: #e23b32;
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.major__card:hover .arrow__rigth {
+    color: #fff;
+    transform: translateX(8px);
+}
+
+/* nav link footer */
+.nav__footer {
+    position: relative;
+    /* Cần thiết để định vị gạch chân */
+    display: inline-block;
+    /* Cần thiết để gạch chân bao phủ toàn bộ văn bản */
+    padding: 5px 0;
+    /* Tạo khoảng cách giữa văn bản và gạch chân */
+    transition: background-position 0.3s ease;
+    /* Tạo hiệu ứng chuyển tiếp mượt mà */
+}
+
+.nav__footer:hover {
+    background-position: 0 100%;
+    cursor: pointer;
+    /* Di chuyển vị trí background sang phải */
+}
+
+.nav__footer::after {
+    content: '';
+    /* Ẩn nội dung của pseudo-element */
+    position: absolute;
+    /* Định vị pseudo-element */
+    left: 0;
+    /* Bắt đầu từ mép trái */
+    top:100%;
+    /* Đặt vị trí theo chiều dọc ở giữa */
+    transform: translateY(-50%);
+    /* Bù đắp vị trí theo chiều dọc */
+    height: 3px;
+    /* Chiều cao của gạch chân */
+    width: 0%;
+    /* Chiều rộng ban đầu là 0 */
+    background-color: #e23b32;
+    /* Màu sắc của gạch chân */
+    transition: width 0.3s ease;    
+    /* Tạo hiệu ứng chuyển tiếp mượt mà cho chiều rộng */
+    border-radius: 4px;
+}
+
+.nav__footer:hover::after {
+    width: 100%;
+    /* Mở rộng chiều rộng khi hover */
+}
+
+/* Swiper */
+.swiper {
+    position: relative;
+}
+
+
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+    opacity: 0;
+    visibility: hidden;
+
+    /* CSS tùy chỉnh cho hình ảnh nút */
+    width: 50px;
+    /* Điều chỉnh kích thước theo ý muốn */
+    height: 50px;
+    /* Điều chỉnh kích thước theo ý muốn */
+    background-color: gray;
+    border-radius:50%;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Đảm bảo các nút hiển thị đúng vị trí */
+
+.custom-swiper-button-prev {
+    position: absolute;
+    left: 10px;
+    /* Điều chỉnh vị trí theo ý muốn */
+    top: 14rem;
+    /* Điều chỉnh vị trí theo ý muốn */
+    transform: translateY(-50%);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-swiper-button-next {
+    position: absolute;
+    right: 10px;
+    /* Điều chỉnh vị trí theo ý muốn */
+    top: 14rem;
+    /* Điều chỉnh vị trí theo ý muốn */
+    transform: translateY(-50%);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow__right,.arrow__left {
+    font-size: 1.5rem;
+}
+
+.custom-swiper-button-prev:hover,
+.custom-swiper-button-next:hover {
+    background-color: #e23b32;
+    /* Màu nền khi hover */
+    color: white;
+    /* Màu chữ khi hover */
+}
+
+.swiper:hover .custom-swiper-button-prev,
+.swiper:hover .custom-swiper-button-next {
+    opacity: 1;
+    /* Hiện nút khi hover */
+    visibility: visible;
+
+    /* Hiện nút khi hover */
+
+    /* cursor: pointer; */
+}
