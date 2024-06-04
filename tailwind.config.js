@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         // Configure your color palette here
         'mau_xanh': '#22376e',
+        'mau_xanh_50':'#e9ebf0',
         'mau_xanh_100':'#BAC1D2',
         'mau_xanh_300': '#6A799D',
         'mau_xanh_400':'#4D5F8A',
