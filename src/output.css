@@ -1100,6 +1100,16 @@ video {
   background-color: rgb(252 236 236 / var(--tw-bg-opacity));
 }
 
+.bg-mau_hong_200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 165 161 / var(--tw-bg-opacity));
+}
+
+.bg-mau_hong_50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 236 235 / var(--tw-bg-opacity));
+}
+
 .bg-mau_trang{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1433,16 +1443,24 @@ video {
     top: -3rem;
   }
 
-  .md\:bottom-\[1rem\]{
-    bottom: 1rem;
-  }
-
   .md\:left-\[44\%\]{
     left: 44%;
   }
 
   .md\:left-\[50\%\]{
     left: 50%;
+  }
+
+  .md\:-bottom-\[2rem\]{
+    bottom: -2rem;
+  }
+
+  .md\:bottom-\[2rem\]{
+    bottom: 2rem;
+  }
+
+  .md\:bottom-\[1rem\]{
+    bottom: 1rem;
   }
 
   .md\:mt-\[\.5rem\]{

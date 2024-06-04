@@ -35,7 +35,7 @@
 }
 
 .nav__link.active {
-    color: #fff;
+    color:#fff;
     background-color: #e23b32;
     border-radius: .5rem;
 }
@@ -96,7 +96,7 @@
 }
 
 .major__card:hover h1 {
-    color: #22376e;
+    color:#22376e;
 }
 
 .major__btn {
@@ -147,7 +147,7 @@
     /* Định vị pseudo-element */
     left: 0;
     /* Bắt đầu từ mép trái */
-    top: 100%;
+    top:100%;
     /* Đặt vị trí theo chiều dọc ở giữa */
     transform: translateY(-50%);
     /* Bù đắp vị trí theo chiều dọc */
@@ -157,7 +157,7 @@
     /* Chiều rộng ban đầu là 0 */
     background-color: #e23b32;
     /* Màu sắc của gạch chân */
-    transition: width 0.3s ease;
+    transition: width 0.3s ease;    
     /* Tạo hiệu ứng chuyển tiếp mượt mà cho chiều rộng */
     border-radius: 4px;
 }
@@ -205,7 +205,7 @@
     height: 50px;
     /* Điều chỉnh kích thước theo ý muốn */
     background-color: gray;
-    border-radius: 50%;
+    border-radius:50%;
 
     /* transition: opacity 0.3s ease, visibility 0.3s ease; */
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -239,8 +239,7 @@
     align-items: center;
 }
 
-.arrow__right,
-.arrow__left {
+.arrow__right,.arrow__left {
     font-size: 1.5rem;
 }
 
