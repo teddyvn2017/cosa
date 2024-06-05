@@ -31,7 +31,7 @@
             <div class="flex flex-row mx-auto container justify-between items-center relative">
 
                 <!-- Logo -->
-                <img src="img/logo.jpg" alt="logo" class="w-36" />
+                <img src="img/logo.jpg" alt="logo" class="lg:w-36 md:w-24" />
                 <!-- <div class="flex flex-col leading-3 text-[14px] md:text-xs lg:text-base gap-[.5rem] md:gap-[.25rem]">
                         <h3 class="font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
                         <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
@@ -41,7 +41,7 @@
                 <!-- Menu desktop -->
                 <div class="hidden md:flex items-center menu-container">
                     <div class="menu-background"></div>
-                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-base lg:text-xl font-sans">
+                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-sm lg:text-xl font-sans">
                         <li>
                             <a href="#" class="nav__link active font-bold">Home</a>
                         </li>
@@ -131,23 +131,24 @@
                 <img src="img/hero_student.png" alt="image" class="img-responsive">
             </div>
         </div>
+
     </section>
 
-    <section class="w-full bg-no-repeat bg-cover mt-[8rem] container">
+    <section class="w-full bg-no-repeat bg-cover mt-[8rem] container md:overflow-x-clip 2xl:overflow-visible">
         <div class="flex md:flex-row flex-col gap-[3rem] relative justify-center items-center">
             <div class="absolute z-0 -top-[2rem] -right-[2rem] w-[80px] h-[80px]
                         md:-top-[3rem] md:left-[44%]
                         lg:left-[44%] lg:-top-[3rem] lg:w-[120px] lg:h-[120px]
-                        xl:left-[46%] xl:top-[2rem]
+                        xl:left-[46%] xl:-top-[1.5rem]
+                        2xl:top-[2rem]
                         md:w-[100px] md:h-[100px]                        
                         bg-mau_xanh_300 rounded-full"></div>
 
             <div class="absolute z-0 
-                        bottom-[10rem] -left-[15rem]                                     
+                        bottom-[10rem] md:-left-[15rem] xl:-left-[8rem]
                         w-[100px] h-[100px]
                         md:w-[120px] md:h-[120px]
-                        lg:w-[200px] lg:h-[200px]
-                       
+                        lg:w-[200px] lg:h-[200px]                       
                         bg-mau_hong_50 rounded-full"></div>
 
             <div class="absolute z-0 -right-[6rem] top-[2.5rem]
@@ -157,7 +158,7 @@
                         xl:top-[6rem]
                         md:w-[100px] md:h-[100px]
                         lg:w-[120px] lg:h-[120px]
-                        bg-mau_hong_200 rounded-full"></div>
+                        bg-mau_hong_200 rounded-full xl:overflow-visible"></div>
 
             <div class="relative bg-mau_xanh rounded-[.75rem] text-mau_trang p-8 w-full 
                 md:max-w-none z-10 flex-1 h-fit" id="about__us">
@@ -187,7 +188,8 @@
         </div>
     </section>
 
-    <section class="mt-[5rem] container relative z-20 overflow-hidden">
+    <section
+        class="lg:mt-[6rem] md:mt-[10rem] container relative z-20 pt-[4rem] md:overflow-x-clip 2xl:overflow-visible">
         <img src="img/side_logo.png" alt="image" class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%]">
         <h2 class="text-4xl text-mau_xanh font-bold">Top Destinations</h2>
         <div class="lg:px-[6rem] relative">
@@ -196,7 +198,7 @@
             </div>
             <div class="swiper mt-[1.25rem] flex flex-col md:flex-row py-[2rem] justify-center">
 
-                <div class="swiper-wrapper text-xl">
+                <div class="swiper-wrapper text-base xl:text-xl">
                     <div
                         class="swiper-slide flex flex-col rounded-[1rem] relative z-0 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
                         <img src="img/can.jpg" alt="image" class="rounded-tl-[.75rem] rounded-tr-[.75rem] object-cover">
@@ -449,7 +451,7 @@
                 class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-[3rem] text-center items-center">
                 <!-- Card 1 -->
                 <div
-                    class="relative bg-white rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 min-h-[120px] text-xl mx-auto  mt-[2rem]">
+                    class="relative bg-white rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 min-h-[120px] text-xl mt-[2rem] 2xl:min-h-[320px]">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center">
                         <!-- <i class="fas fa-calendar-alt text-white text-2xl"></i> -->
@@ -462,7 +464,7 @@
                 </div>
                 <!-- Card 2 -->
                 <div
-                    class="relative bg-white rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 min-h-[120px] text-xl mx-auto  mt-[2rem]">
+                    class="relative bg-white rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-6 min-h-[120px] text-xl mt-[2rem] 2xl:min-h-[320px]">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-red-600 rounded-full flex items-center justify-center">
                         <!-- <i class="fas fa-calendar-alt text-white text-2xl"></i> -->
@@ -475,7 +477,7 @@
                 </div>
                 <!-- Card 3 -->
                 <div class="relative bg-white rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] 
-                        p-6 min-h-[120px] text-xl mx-auto mt-[2rem] md:left-[50%] lg:left-0">
+                        p-6 min-h-[120px] text-xl mt-[2rem] md:left-[50%] lg:left-0 2xl:min-h-[320px]">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center">
                         <!-- <i class="fas fa-calendar-alt text-white text-2xl"></i> -->
@@ -491,7 +493,16 @@
     </section>
 
     <section class="mt-[6rem] relative container">
-        <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center">
+        <div class="hidden absolute z-0 
+                            md:block                   
+                            bottom-[10rem] md:-left-[15rem] 
+                            lg:-left-[6rem]
+                            xl:-left-[3rem]
+                            w-[100px] h-[100px]
+                            md:w-[120px] md:h-[120px]
+                            lg:w-[200px] lg:h-[200px]
+                            bg-mau_xanh_100 rounded-full"></div>
+        <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center relative z-30">
             <div class="flex flex-col basis-2/4">
                 <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2>
                 <h1 class="text-mau_xanh font-bold text-4xl mt-[2.5rem] mb-[2rem]">What They Say?</h1>
@@ -507,7 +518,7 @@
             <div class="relative">
                 <img src="img/testimonial.png" alt="image" class="rounded-[1rem] basis-2/4 w-[80%] ml-auto">
                 <div class="absolute bg-[#e9ebf0] lg:p-[2rem] p-[1rem] -bottom-[4rem] lg:-left-[9rem] rounded-[.75rem] 
-                    text-base z-20 lg:w-[120%] w-[90%] border-l-8 border-mau_xanh md:bottom-[1rem]">
+                    text-base z-20 lg:w-[120%] w-[90%] border-l-8 border-mau_xanh md:bottom-[1rem] lg:-bottom-[3rem]">
                     <div class="text-mau_xanh_400 border-l-2 border-x-mau_xanh_300 pl-4">
                         <p>
                             "Thank you so much for your help. It's exactly what I've been looking for. You won't regret
@@ -524,6 +535,15 @@
 
         </div>
         <img src="img/hong_phan_testimonial.png" alt="image" class="absolute z-0 left-0 top-0">
+        <div class="hidden absolute z-0 
+                                    md:block                   
+                                    bottom-[0rem] md:right-[1rem] 
+                                    lg:right-[2rem]
+                                    xl:-right-[8rem] xl:-bottom-[9rem]
+                                    w-[100px] h-[100px]
+                                    md:w-[120px] md:h-[120px]
+                                    lg:w-[400px] lg:h-[400px]
+                                    bg-mau_hong_50 rounded-full"></div>
     </section>
 
     <section class="mt-[10rem] container">
