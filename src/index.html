@@ -31,7 +31,7 @@
             <div class="flex flex-row mx-auto container justify-between items-center relative">
 
                 <!-- Logo -->
-                <img src="img/logo.jpg" alt="logo" class="lg:w-36 md:w-24" />
+                <img src="img/logo.png" alt="logo" class="lg:w-36 md:w-24" />
                 <!-- <div class="flex flex-col leading-3 text-[14px] md:text-xs lg:text-base gap-[.5rem] md:gap-[.25rem]">
                         <h3 class="font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
                         <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
@@ -41,21 +41,55 @@
                 <!-- Menu desktop -->
                 <div class="hidden md:flex items-center menu-container">
                     <div class="menu-background"></div>
-                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-sm lg:text-xl font-sans">
+                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-sm lg:text-xl font-sans nav-items">
                         <li>
-                            <a href="#" class="nav__link active font-bold">Home</a>
+                            <a href="#" class="nav__link active font-bold px-[20px] py-[10px]">Trang chủ</a>
+                        </li>
+                        <li class="group relative">
+                            <a href="#" class="nav__link px-[20px] py-[10px]">
+                                Du học
+
+                                <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+
+                            <!-- <div class="hidden submenu absolute top-full left-0 mt-2 bg-white shadow-md rounded-md"> -->
+                            <ul
+                                class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
+                                            invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Úc</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Mỹ</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Canada</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học New Zealand</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Singapore</a></li>
+                            </ul>
+                            <!-- </div> -->
+
                         </li>
                         <li>
-                            <a href="#" class="nav__link">Features</a>
+                            <a href="#" class="nav__link px-[20px] py-[10px]">Themes</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">Themes</a>
+                            <a href="#" class="nav__link px-[20px] py-[10px]">Blog</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__link">Contact</a>
+                            <a href="#" class="nav__link px-[20px] py-[10px]">Contact</a>
                         </li>
                         <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
                             <a href="#">Apply Now</a>
@@ -63,31 +97,44 @@
                     </ul>
                 </div>
 
-
-                <!-- <button id="menuToggle" class="md:hidden flex flex-col gap-[6px]">
-                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
-                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
-                    <span class="block h-[4px] w-8 bg-mau_xanh rounded-full"></span>
-                </button> -->
-
-
-                <svg viewBox="0 0 12 10" class="hamburger md:hidden" height="40px" width="32px" id="menuToggle">
+                <svg viewBox="0 0 12 10" class="hamburger md:hidden cursor-pointer" height="40px" width="32px"
+                    id="menuToggle">
                     <path d="M10,2 L2,2" class="upper" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
                     <path d="M2,5 L10,5" class="middle" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
                     <path d="M10,8 L2,8" class="lower" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
                 </svg>
 
                 <!-- menu mobile -->
-                <div class="md:hidden absolute top-[4rem] -left-[1rem] w-full h-0">
-
+                <div class="md:hidden absolute top-[5rem] -left-[1rem] w-full h-0">
                     <ul
-                        class="flex flex-col gap-[2.5rem] items-center pt-[3rem]
-                            font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile">
+                        class="flex flex-col gap-[2.5rem] items-start pt-[3rem] pl-[1.25rem]
+                                            font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile">
                         <li>
-                            <a href="#" class="active font-bold text-2xl">Home</a>
+                            <a href="#" class="active font-bold text-xl">Trang chủ</a>
                         </li>
-                        <li>
-                            <a href="#" class="nav__link-mobile">Features</a>
+                        <li class="group relative has_submenu">
+                            <a href="#" class="nav__link-mobile">Du học</a>
+                            <i class="ri-add-line"></i>
+                            <ul
+                                class="submenu hidden flex-col items-start mt-[1rem] pl-[2rem] gap-[2rem] transition-transform duration-500 ease-in-out">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Úc</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Mỹ</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Canada</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học New Zealand</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Singapore</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="nav__link-mobile">Themes</a>
@@ -103,6 +150,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
 
         </div>
@@ -190,7 +238,8 @@
 
     <section
         class="lg:mt-[6rem] md:mt-[10rem] container relative z-20 pt-[4rem] md:overflow-x-clip 2xl:overflow-visible">
-        <img src="img/side_logo.png" alt="image" class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%]">
+        <img src="img/side_logo.png" alt="image"
+            class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] overflow-hidden">
         <h2 class="text-4xl text-mau_xanh font-bold">Top Destinations</h2>
         <div class="lg:px-[6rem] relative">
             <div class="custom-swiper-button-prev">
@@ -498,10 +547,12 @@
                             bottom-[10rem] md:-left-[15rem] 
                             lg:-left-[6rem]
                             xl:-left-[3rem]
+                            2xl:-left-[1rem]
                             w-[100px] h-[100px]
                             md:w-[120px] md:h-[120px]
                             lg:w-[200px] lg:h-[200px]
                             bg-mau_xanh_100 rounded-full"></div>
+
         <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center relative z-30">
             <div class="flex flex-col basis-2/4">
                 <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2>
@@ -534,19 +585,22 @@
             </div>
 
         </div>
-        <img src="img/hong_phan_testimonial.png" alt="image" class="absolute z-0 left-0 top-0">
+        <img src="img/hong_phan_testimonial.png" alt="image" class="absolute z-0 left-0 top-0 w-[80%]">
         <div class="hidden absolute z-0 
                                     md:block                   
                                     bottom-[0rem] md:right-[1rem] 
-                                    lg:right-[2rem]
+                                    lg:-right-[14rem] lg:-bottom-[9rem]
                                     xl:-right-[8rem] xl:-bottom-[9rem]
                                     w-[100px] h-[100px]
                                     md:w-[120px] md:h-[120px]
                                     lg:w-[400px] lg:h-[400px]
-                                    bg-mau_hong_50 rounded-full"></div>
+                                    bg-mau_hong_50 rounded-full" id="mau_hong_to"></div>
+        <!-- <div class="hidden absolute z-0 md:flex items-center justify-center h-screen" id="bg_mau_hong">
+            <div class="circle-gradient"></div>
+        </div> -->
     </section>
 
-    <section class="mt-[10rem] container">
+    <section class="mt-[14rem] container relative z-30">
 
         <h1 class="text-4xl text-mau_do text-center font-bold">Lastest News and Resources</h1>
         <h3 class="text-xl text-mau_do text-center mt-[1rem] md:mt-[.5rem]">See the developments that have occurred
@@ -647,7 +701,7 @@
     <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
         <div class="container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] justify-around">
             <div class="w-full">
-                <img src="img/logo.jpg" alt="logo" class="w-36" />
+                <img src="img/logo.png" alt="logo" class="w-36" />
                 <!-- <div class="flex flex-col leading-3">
                     <h3 class="text-base font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
                     <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
