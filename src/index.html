@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ COSA</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="./output.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <nav class="relative left-0 top-0 h-auto w-full bg-mau_xanh z-30">
+    <header class="relative left-0 top-0 h-auto w-full bg-mau_xanh z-30">
 
         <!-- top nav -->
         <div class="flex flex-row py-[24px] gap-16 h-[100%] w-full container
@@ -28,7 +30,7 @@
         </div>
 
         <div class="bg-mau_trang p-4 drop-shadow-lg">
-            <div class="flex flex-row mx-auto container justify-between items-center relative">
+            <div class="flex flex-row mx-auto lg:container justify-between items-center">
 
                 <!-- Logo -->
                 <img src="img/logo.png" alt="logo" class="lg:w-36 md:w-24" />
@@ -97,43 +99,48 @@
                     </ul>
                 </div>
 
-                <svg viewBox="0 0 12 10" class="hamburger md:hidden cursor-pointer" height="40px" width="32px"
-                    id="menuToggle">
-                    <path d="M10,2 L2,2" class="upper" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
-                    <path d="M2,5 L10,5" class="middle" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
-                    <path d="M10,8 L2,8" class="lower" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
-                </svg>
-
                 <!-- menu mobile -->
-                <div class="md:hidden absolute top-[5rem] -left-[1rem] w-full h-0">
+
+                <!-- <nav class="mobile__menu">                    
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Kim chỉ nam du học</a>
+                     
+                        </li>
+                        <li><a href="#">Du học</a>                                                 
+                        </li>
+                        <li><a href="#" class="nav__link-mobile">Liên hệ</a></li>
+                        <li><a href="#" class="nav__link-mobile">Đăng ký</a></li>
+                    </ul>
+                </nav> -->
+
+                <div class="md:hidden absolute left-0 top-[6rem] w-screen h-auto">
                     <ul
-                        class="flex flex-col gap-[2.5rem] items-start pt-[3rem] pl-[1.25rem]
-                                            font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile">
-                        <li>
+                        class="flex flex-col gap-[2rem] items-start pt-[2rem] font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile container">
+                        <li class="nav__link-mobile">
                             <a href="#" class="active font-bold text-xl">Trang chủ</a>
                         </li>
-                        <li class="group relative has_submenu">
-                            <a href="#" class="nav__link-mobile">Du học</a>
-                            <i class="ri-add-line"></i>
-                            <ul
-                                class="submenu hidden flex-col items-start mt-[1rem] pl-[2rem] gap-[2rem] transition-transform duration-500 ease-in-out">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
-                                        học Úc</a>
-                                </li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
-                                        học Mỹ</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
-                                        học Canada</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
-                                        học New Zealand</a></li>
-                                <li><a href="#"
-                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
-                                        học Singapore</a></li>
+                        <li class="nav__link-mobile">Kim chỉ nam du học</li>
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Du học</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-4">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Another Menu</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-4">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
                             </ul>
                         </li>
                         <li>
@@ -151,15 +158,22 @@
                     </ul>
                 </div>
 
+
+                <svg viewBox="0 0 12 10" class="hamburger md:hidden cursor-pointer" height="40px" width="32px"
+                    id="menuToggle">
+                    <path d="M10,2 L2,2" class="upper" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                    <path d="M2,5 L10,5" class="middle" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                    <path d="M10,8 L2,8" class="lower" style="fill: none;stroke: #22376e;stroke-linecap: round;" />
+                </svg>
             </div>
 
         </div>
         <!-- Main menu -->
-    </nav>
+    </header>
 
     <section class="hero w-full flex bg-hero-pattern bg-no-repeat bg-cover">
         <div
-            class="container flex flex-col md:flex-row md:mt-[3rem] lg:mt-[1rem] mt-[6rem] pt-[4rem] justify-center items-center align-top">
+            class="container flex flex-col md:flex-row md:mt-[3rem] lg:mt-[1rem] mt-[2rem] justify-center items-center align-top">
             <div class="rounded-[2rem] text-mau_trang basis-2/4">
                 <h1 class="text-4xl font-bold text-mau_do">Study Abroad Programs</h1>
                 <h1 class="text-4xl font-bold text-mau_xanh mt-[1rem]">All Over The World</h1>
@@ -190,7 +204,7 @@
                         xl:left-[46%] xl:-top-[1.5rem]
                         2xl:top-[2rem]
                         md:w-[100px] md:h-[100px]                        
-                        bg-mau_xanh_300 rounded-full"></div>
+                        bg-mau_xanh_300 rounded-full hidden"></div>
 
             <div class="absolute z-0 
                         bottom-[10rem] md:-left-[15rem] xl:-left-[8rem]
@@ -239,7 +253,7 @@
     <section
         class="lg:mt-[6rem] md:mt-[10rem] container relative z-20 pt-[4rem] md:overflow-x-clip 2xl:overflow-visible">
         <img src="img/side_logo.png" alt="image"
-            class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] overflow-hidden">
+            class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] hidden">
         <h2 class="text-4xl text-mau_xanh font-bold">Top Destinations</h2>
         <div class="lg:px-[6rem] relative">
             <div class="custom-swiper-button-prev">
@@ -755,6 +769,7 @@
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/menu_mobile_anim.js"></script>
+    <!-- <script src="js/menu_mobile.js"></script> -->
 </body>
 
 </html>

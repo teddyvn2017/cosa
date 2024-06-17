@@ -59,13 +59,14 @@
 
 /* CSS cho các liên kết di động */
 .nav__link-mobile {
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
     padding: 10px 20px;
     text-decoration: none;
     color: inherit;
     border-radius: .5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: fit-content;
 }
 
 /* Trạng thái hover thay đổi màu nền và màu chữ */
@@ -263,6 +264,22 @@
     border-radius: 50%;
 }
 
+
+.menuMobile {
+    /* opacity: 1; */
+    height: auto;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+}
+
 /* .testimonial {
     position: relative;
     display:inline-block;
@@ -290,29 +307,88 @@
 } */
 
 /* Styles for the submenu */
-.submenu {
+
+/* 
+.mobile__menu {
+    position: absolute;
+    top: 6rem;
+    right: -100%;  
+    width: 100vw;
+    height: auto;
+    background-color: #22376e;
+    overflow-x: hidden;
+    transition:0.5s ease;
+    cursor: pointer;
+   
+}
+
+.mobile__menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:2rem;
+    position: relative;
+    padding: 2rem;
+    transition: 0.5s ease;
+  
+}
+
+.mobile__menu ul li {
+    margin-bottom: 2rem;
+}
+
+.mobile__menu ul li a {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mobile__menu ul li.has__mobile__submenu ul{
+    position: absolute;
+    top:2rem;
+    left: 90%;
+    visibility: visible;
+    margin-top: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+  
+}
+
+.mobile__menu ul li ul li {
+    white-space: nowrap;
+
+}
+
+.arrow__left {
+    opacity: 0;
+}
+
+.arrow__left.show {
+    opacity: 1;
+}
+
+
+.btn__back {
+    color: #fff;
+    font-size:1.25rem;
     display: none;
 }
 
-.submenu.active {
-    display: flex;
+.btn__back.show {
+    display: block;
 }
 
-.ri-add-line.rotate-90 {
-    transform: rotate(90deg);
-    transition: transform 0.3s;
-}
-
-/* Optional additional styles for smooth transition */
-/* Optional additional styles for smooth transition */
-.submenu {
-    transition: max-height 0.6s ease-in-out;
-    overflow: hidden;
-    max-height: 0;
+.mobile__menu ul.slideOut {
+    transform: translateX(-90%);
 }
 
 
-.submenu.active {
-    max-height: 200px;
-    /* Adjust based on submenu content height */
+.mobile__menu ul li.has__mobile__submenu ul.show {
+    opacity: 1;
+    visibility: visible;
 }
+
+.mobile__menu.slideIn {
+    right: 0;
+    
+} */
