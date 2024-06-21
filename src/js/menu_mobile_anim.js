@@ -10,12 +10,12 @@ const submenu = document.querySelector('.submenu');
 
 var tl = gsap.timeline({ paused: true });
 
-tl.to(menu, { duration: 1, opacity: 1, height: '100vh', ease: 'expo.inOut' });
+tl.to(menu, { duration: 0.6, opacity: 1, height: '100vh', ease: 'expo.inOut' });
 // từ trái qua
 //tl.from(links, { duration: 1, opacity: 0, x: -20, stagger: 0.1, ease: 'expo.inOut', },"-= 0.5");
 
 //menu item trên xuống
-tl.from(links, { duration: 1, opacity: 0, y: 20, stagger: 0.1, ease: 'expo.inOut' }, "-= 0.5");
+tl.from(links, { duration: 0.6, opacity: 0, y: 20, stagger: 0.1, ease: 'expo.inOut' }, "-= 0.5");
 
 tl.reverse();
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuItems.forEach((menuItem, index) => {
         const toggleIcon = toggleIcons[index];
         const submenu = menuItem.closest('.has__submenu').querySelector('.submenu');
-
+        console.log('menuItem', menuItem);
         const toggleSubmenu = (event) => {
             event.preventDefault();
             const isExpanded = submenu.style.display === 'flex';

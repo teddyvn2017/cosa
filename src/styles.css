@@ -274,7 +274,7 @@
 .submenu {
     display: none;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
     overflow: hidden;
     height: 0;
     opacity: 0;

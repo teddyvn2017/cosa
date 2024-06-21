@@ -14,15 +14,21 @@
 
 <body>
 
-    <header class="relative left-0 top-0 h-auto w-full bg-mau_xanh z-30">
+    <header class="sticky left-0 top-0 h-auto w-full bg-mau_xanh z-50">
 
         <!-- top nav -->
-        <div class="flex flex-row py-[24px] gap-16 h-[100%] w-full container
+        <div class="flex flex-row py-[24px] gap-8 h-[100%] w-full container
                 mx-auto text-mau_trang md:justify-end lg:justify-end justify-center md:text-base lg:text-xl">
-            <div class="flex flex-row gap-2">
+            <!-- <div class="flex flex-row gap-2">
                 <i class="ri-mail-line"></i>
                 <p>cosa@gmail.com</p>
+            </div> -->
+            <div class="flex flex-row gap-[0.25rem] text-[13px] md:text-base lg:text-xl">
+                <a href="#">Tin tức</a>/<a>Sự kiện</a>
             </div>
+
+            <a href="#">Liên hệ</a>
+            <!-- <img src="img/logo.png" alt="logo" class="lg:w-36 md:w-24" /> -->
             <div class="flex flex-row gap-2">
                 <i class="ri-phone-line"></i>
                 <p>0902.xxx.xxx</p>
@@ -43,9 +49,50 @@
                 <!-- Menu desktop -->
                 <div class="hidden md:flex items-center menu-container">
                     <div class="menu-background"></div>
-                    <ul class="flex lg:gap-[20px] text-mau_xanh md:text-sm lg:text-xl font-sans nav-items">
-                        <li>
+                    <ul class="flex lg:gap-[1rem] text-mau_xanh md:text-sm lg:text-xl font-sans nav-items">
+                        <!-- <li>
                             <a href="#" class="nav__link active font-bold px-[20px] py-[10px]">Trang chủ</a>
+                        </li> -->
+
+                        <li class="group relative">
+                            <a href="#" class="nav__link px-[20px] py-[10px]">
+                                Kim chỉ nam du học
+
+                                <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
+                                                                invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Lộ
+                                        trình du học thành công</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Tài
+                                        chính du học</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Săn
+                                        học bổng du học</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Tra
+                                        cứu chi phí sinh hoạt khi du học</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Hành
+                                        trang du học</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Chăm
+                                        sóc hậu du học</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Cơ
+                                        hội việc làm và định cư</a></li>
+                            </ul>
                         </li>
                         <li class="group relative">
                             <a href="#" class="nav__link px-[20px] py-[10px]">
@@ -59,10 +106,9 @@
                                 </svg>
                             </a>
 
-                            <!-- <div class="hidden submenu absolute top-full left-0 mt-2 bg-white shadow-md rounded-md"> -->
                             <ul
                                 class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
-                                            invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                        invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
                                 <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
@@ -81,70 +127,236 @@
                                         class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
                                         học Singapore</a></li>
                             </ul>
-                            <!-- </div> -->
+                        </li>
+                        <li class="group relative">
+                            <a href="#" class="nav__link px-[20px] py-[10px]">
+                                Anh ngữ
+
+                                <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+
+                            <ul
+                                class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
+                                                                invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Vì
+                                        sao chọn học Anh ngữ cùng COSA?</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Chương
+                                        trình đào tạo</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Du
+                                        học Canada</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Lịch
+                                        khai giảng</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Cảm
+                                        nhận của khách hàng</a></li>
+                            </ul>
+                        </li>
+                        <li class="group relative">
+                            <a href="#" class="nav__link px-[20px] py-[10px]">
+                                Định cư
+                                <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
+                                                                invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Định
+                                        cư Úc</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Định
+                                        cư Mỹ</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Định
+                                        cư Canada</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Định
+                                        cư New Zealand</a></li>
+                            </ul>
 
                         </li>
-                        <li>
-                            <a href="#" class="nav__link px-[20px] py-[10px]">Themes</a>
+                        <li class="group relative">
+                            <a href="#" class="nav__link px-[20px] py-[10px]">
+                                Dịch vụ sinh viên
+                                <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="origin-top-left absolute rounded-md shadow-lg bg-mau_trang 
+                                                                                        invisible group-hover:opacity-100 group-hover:visible transition duration-300 px-[20px] py-[10px] min-w-max">
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Nhà
+                                        ở</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Bảo
+                                        hiểm</a></li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Định
+                                        cư Canada</a>
+                                </li>
+                                <li><a href="#"
+                                        class="block px-4 py-2 hover:bg-mau_do hover:text-mau_trang rounded-[0.5rem]">Dịch
+                                        vụ ngân hàng</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="nav__link px-[20px] py-[10px]">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__link px-[20px] py-[10px]">Contact</a>
-                        </li>
-                        <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
-                            <a href="#">Apply Now</a>
-                        </li>
+
                     </ul>
                 </div>
 
                 <!-- menu mobile -->
-
-                <!-- <nav class="mobile__menu">                    
-                    <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Kim chỉ nam du học</a>
-                     
-                        </li>
-                        <li><a href="#">Du học</a>                                                 
-                        </li>
-                        <li><a href="#" class="nav__link-mobile">Liên hệ</a></li>
-                        <li><a href="#" class="nav__link-mobile">Đăng ký</a></li>
-                    </ul>
-                </nav> -->
-
                 <div class="md:hidden absolute left-0 top-[6rem] w-screen h-auto">
+                    <ul class="flex flex-col gap-[1.5rem] items-start pt-[1rem] font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang 
+                                text-base opacity-0 h-0 menuMobile container">
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2.5rem]">
+                                <a href="#" class="menu-item">Kim chỉ nam du học</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
+                                <li><a href="#" class="nav__link-mobile">Lộ trình du học thành công</a></li>
+                                <li><a href="#" class="nav__link-mobile">Tài chính du học</a></li>
+                                <li><a href="#" class="nav__link-mobile">Săn học bổng du học</a></li>
+                                <li><a href="#" class="nav__link-mobile float-left">Tra cứu chi phí sinh hoạt khi du
+                                        học</a></li>
+                                <li><a href="#" class="nav__link-mobile">Hành trang du học</a></li>
+                                <li><a href="#" class="nav__link-mobile">Chăm sóc hậu du học</a></li>
+                                <li><a href="#" class="nav__link-mobile">Cơ hội việc làm và định cư</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2.5rem]">
+                                <a href="#" class="menu-item">Du học</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
+                                <li><a href="#" class="nav__link-mobile">Du học Úc</a></li>
+                                <li><a href="#" class="nav__link-mobile">Du học Canada</a></li>
+                                <li><a href="#" class="nav__link-mobile">Du học Mỹ</a></li>
+                                <li><a href="#" class="nav__link-mobile">Du học New Zealand</a></li>
+                                <li><a href="#" class="nav__link-mobile">Du học Anh Quốc</a></li>
+                                <li><a href="#" class="nav__link-mobile">Du học Singapore</a></li>
+                            </ul>
+                        </li>
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Anh ngữ</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
+                                <li><a href="#" class="nav__link-mobile float-left">Vì sao chọn học Anh ngữ cùng
+                                        COSA?</a></li>
+                                <li><a href="#" class="nav__link-mobile">Chương trình đào tạo</a></li>
+                                <li><a href="#" class="nav__link-mobile">Lịch khai giảng</a></li>
+                                <li><a href="#" class="nav__link-mobile">Cảm nhận của khách hàng</a></li>
+                            </ul>
+                        </li>
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Định cư</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
+                                <li><a href="#" class="nav__link-mobile">Định cư Úc</a></li>
+                                <li><a href="#" class="nav__link-mobile">Định cư Canada</a></li>
+                                <li><a href="#" class="nav__link-mobile">Định cư Mỹ</a></li>
+                                <li><a href="#" class="nav__link-mobile">Định cư New Zealand</a></li>
+                                <li><a href="#" class="nav__link-mobile">Định cư Anh Quốc</a></li>
+                            </ul>
+                        </li>
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Dịch vụ sinh viên</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
+                                <li><a href="#" class="nav__link-mobile">Nhà ở</a></li>
+                                <li><a href="#" class="nav__link-mobile">Bảo hiểm</a></li>
+                                <li><a href="#" class="nav__link-mobile">Dịch vụ ngân hàng</a></li>
+                            </ul>
+                        </li>
+                        <li class="px-[20px] py-[10px]"><a href="#">Liên hệ</a></li>
+                        <!-- <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
+                            <a href="#">Apply Now</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <div class="md:hidden absolute left-0 top-[6rem] w-screen h-auto">
                     <ul
                         class="flex flex-col gap-[2rem] items-start pt-[2rem] font-sans w-full z-30 bg-mau_xanh uppercase text-mau_trang text-xl opacity-0 h-0 menuMobile container">
                         <li class="nav__link-mobile">
-                            <a href="#" class="active font-bold text-xl">Trang chủ</a>
-                        </li>
-                        <li class="nav__link-mobile">Kim chỉ nam du học</li>
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Kim chỉ nam du học</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-4">
+                                <li><a href="#">Lộ trình du học thành công</a></li>
+                                <li><a href="#">Tài chính du học</a></li>
+                                <li><a href="#">Săn học bổng du học</a></li>
+                                <li><a href="#">Tra cứu chi phí sinh hoạt khi du học</a></li>
+                                <li><a href="#">Hành trang du học</a></li>
+                                <li><a href="#">Chăm sóc hậu du học</a></li>
+                                <li><a href="#">Cơ hội việc làm và định cư</a></li>                                
+                            </ul>
+                        </li>                     
                         <li class="has__submenu w-full">
                             <div class="flex flex-row nav__link-mobile gap-[2rem]">
                                 <a href="#" class="menu-item">Du học</a>
                                 <i class="ri-add-line toggle-icon"></i>
                             </div>
                             <ul class="submenu pl-4">
-                                <li><a href="#">Submenu 1</a></li>
-                                <li><a href="#">Submenu 2</a></li>
-                                <li><a href="#">Submenu 3</a></li>
+                                <li><a href="#">Du học Úc</a></li>
+                                <li><a href="#">Du học Canada</a></li>
+                                <li><a href="#">Du học Anh Quốc</a></li>
+                                <li><a href="#">Du học Mỹ</a></li>
+                                <li><a href="#">Du học Singapore</a></li>
                             </ul>
-                        </li>
+                        </li>                        
                         <li class="has__submenu w-full">
                             <div class="flex flex-row nav__link-mobile gap-[2rem]">
-                                <a href="#" class="menu-item">Another Menu</a>
+                                <a href="#" class="menu-item">Anh ngữ</a>
                                 <i class="ri-add-line toggle-icon"></i>
                             </div>
                             <ul class="submenu pl-4">
-                                <li><a href="#">Submenu 1</a></li>
-                                <li><a href="#">Submenu 2</a></li>
-                                <li><a href="#">Submenu 3</a></li>
+                                <li><a href="#">Vì sao chọn học Anh ngữ cùng COSA?</a></li>
+                                <li><a href="#">Chương trình đào tạo</a></li>
+                                <li><a href="#">Lịch khai giảng</a></li>
+                                <li><a href="#">Cảm nhận của khách hàng</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#" class="nav__link-mobile">Themes</a>
+                      
+                        <li class="has__submenu w-full">
+                            <div class="flex flex-row nav__link-mobile gap-[2rem]">
+                                <a href="#" class="menu-item">Định cư</a>
+                                <i class="ri-add-line toggle-icon"></i>
+                            </div>
+                            <ul class="submenu pl-4">
+                                <li><a href="#">Định cư Úc</a></li>
+                                <li><a href="#">Định cư Canada</a></li>
+                                <li><a href="#">Định cư Mỹ</a></li>
+                                <li><a href="#">Định cư New Zealand</a></li>
+                                <li><a href="#">Định cư Anh Quốc</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="nav__link-mobile">Blog</a>
@@ -154,9 +366,9 @@
                         </li>
                         <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
                             <a href="#">Apply Now</a>
-                        </li>
+                        </li> 
                     </ul>
-                </div>
+                </div> -->
 
 
                 <svg viewBox="0 0 12 10" class="hamburger md:hidden cursor-pointer" height="40px" width="32px"
@@ -224,22 +436,27 @@
 
             <div class="relative bg-mau_xanh rounded-[.75rem] text-mau_trang p-8 w-full 
                 md:max-w-none z-10 flex-1 h-fit" id="about__us">
-                <h2 class="font-bold lg:text-2xl md:text-base">About us</h2>
+                <h2 class="font-bold xl:text-3xl lg:text-2xl md:text-base">Giới thiệu COSA</h2>
                 <h1 class="xl:text-4xl lg:text-2xl text-xl mt-[1rem] font-bold leading-tight">
-                    Lorem ipsum dolor sit amet consectetur lorem.
+                    COSA - người bạn đồng hành tin cậy trên con đường du học của bạn
                 </h1>
                 <p class="mt-[1rem] text-base lg:text-xl leading-normal">
-                    Lorem ipsum dolor sit amet consectetur. Vitae sed viverra et imperdiet non etiam. Dictum tortor
-                    sed
-                    mollis viverra.
-                    Purus etiam sed enim nullam id aliquam blandit ac ut. Nibh ultrices nulla nec ac lectus diam
-                    aliquet. Dictum tortor sed
-                    mollis viverra. Purus etiam sed enim nullam id aliquam blandit ac ut. Nibh ultrices nulla nec ac
-                    lectus
-                    diam aliquet.
+                    Công ty Tư vấn Du học - Định cư COSA là một đơn vị chuyên nghiệp trong lĩnh vực tư vấn du học và
+                    định cư. Với Ban Điều
+                    hành và đội ngũ Chuyên viên tư vấn có hơn 20 năm kinh nghiệm, chúng tôi tự hào là đối tác đáng tin
+                    cậy đã giúp cho hàng
+                    ngàn du học sinh thực hiện giấc mơ du học tại các quốc gia hàng đầu như Úc, Canada, Mỹ, New Zealand,
+                    Anh và Singapore.
+                </p>
+                <p class="mt-[1rem] text-base lg:text-xl leading-normal">
+                    Với sự hiểu biết sâu sắc về các hệ thống giáo dục quốc tế và quy trình xin visa, đội ngũ Chuyên viên
+                    tư vấn của chúng
+                    tôi sẽ đồng hành cùng bạn từ giai đoạn lựa chọn trường, chương trình học phù hợp cho đến việc hoàn
+                    tất các thủ tục xin
+                    visa và quá trình định cư tại nước ngoài.
                 </p>
                 <button class="bg-mau_hong text-mau_do px-4 py-2 mt-[2rem] rounded-[.5rem] lg:text-xl text-sm">
-                    Explore
+                    Đọc tiếp
                     <i class="ri-arrow-right-s-line"></i>
                 </button>
             </div>
@@ -254,7 +471,7 @@
         class="lg:mt-[6rem] md:mt-[10rem] container relative z-20 pt-[4rem] md:overflow-x-clip 2xl:overflow-visible">
         <img src="img/side_logo.png" alt="image"
             class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] hidden">
-        <h2 class="text-4xl text-mau_xanh font-bold">Top Destinations</h2>
+        <h2 class="text-4xl text-mau_xanh font-bold">Quốc gia du học</h2>
         <div class="lg:px-[6rem] relative">
             <div class="custom-swiper-button-prev">
                 <i class="ri-arrow-left-s-line arrow__left"></i>
@@ -365,7 +582,7 @@
 
     <section class="mt-[5rem] container">
         <div class="mb-[2rem] bg-mau_trang">
-            <h2 class="text-mau_xanh text-4xl font-bold mb-[2rem]">Popular Majors</h2>
+            <h2 class="text-mau_xanh text-4xl font-bold mb-[2rem]">Ngành du học phổ biến</h2>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 
                 <div
@@ -503,7 +720,7 @@
     <!-- Why choose us -->
     <section class="mt-[5rem] w-full">
         <div class="text-center mt-[3rem] container">
-            <h1 class="text-4xl font-semibold text-mau_xanh">Maximize Your Potentials & Possibilities</h1>
+            <h1 class="text-4xl font-semibold text-mau_xanh">Cam kết chất lượng dịch vụ tại COSA</h1>
             <h2 class="text-xl text-gray-600 mt-[1rem] md:mt-[0.5rem]">Learn the secrets to Life Success, these people
                 have got the key.​</h2>
         </div>
@@ -569,15 +786,17 @@
 
         <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center relative z-30">
             <div class="flex flex-col basis-2/4">
-                <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2>
+                <h2 class="text-mau_xanh_300 text-2xl font-light">Khách hàng cảm nhận chất lượng dịch vụ của COSA</h2>
+                <!-- <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2> -->
                 <h1 class="text-mau_xanh font-bold text-4xl mt-[2.5rem] mb-[2rem]">What They Say?</h1>
-                <p class="text-mau_xanh_300 leading-7 md:max-w-[80%] lg:max-w-[80%] w-[100%] text-xl">
-                    Lorem ipsum dolor sit amet consectetur. Vulputate gravida habitant a egestas sagittis turpis sed
-                    nisl.
-                    Lorem ipsum dolor sit amet consectetur. Pharetra in ut enim dignissim eu egestas vehicula. Sed
-                    mauris sit leo urna
-                    suspendisse sit velit sem.
-                    Lorem ipsum dolor sit amet consectetur.
+                <p class="text-mau_xanh_300 leading-10 md:max-w-[80%] lg:max-w-[80%] w-[100%] text-xl">
+                    Với hơn 10 năm kinh nghiệm, đội ngũ chuyên gia của chúng tôi là người đồng hành đáng tin cậy, giúp
+                    học sinh hiện thực
+                    hóa ước mơ du học. Từ lựa chọn ngành học, trường phù hợp đến hỗ trợ hồ sơ, visa, chúng tôi đồng hành
+                    cùng bạn, giúp bạn
+                    vượt qua mọi trở ngại và thành công trong hành trình du học. Những phản hồi tích cực từ các học sinh
+                    đã được tư vấn thể
+                    hiện sự hài lòng và niềm tin vào chất lượng dịch vụ tư vấn du học của chúng tôi.
                 </p>
             </div>
             <div class="relative">
@@ -601,7 +820,7 @@
         </div>
         <img src="img/hong_phan_testimonial.png" alt="image" class="absolute z-0 left-0 top-0 w-[80%]">
         <div class="hidden absolute z-0 
-                                    md:block                   
+                    xl:block  xl:overflow-auto
                                     bottom-[0rem] md:right-[1rem] 
                                     lg:-right-[14rem] lg:-bottom-[9rem]
                                     xl:-right-[8rem] xl:-bottom-[9rem]
@@ -712,48 +931,125 @@
         </div>
     </section>
 
-    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
-        <div class="container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] justify-around">
-            <div class="w-full">
-                <img src="img/logo.png" alt="logo" class="w-36" />
-                <!-- <div class="flex flex-col leading-3">
-                    <h3 class="text-base font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
-                    <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
-                </div> -->
+    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang pb-[1.5rem]">
+        <div class="container flex flex-col lg:flex-row pt-[2rem] pb-[2rem] gap-[3rem] justify-around">
+            <div class="w-auto">
+                <img src="img/logo.png" alt="logo" />
             </div>
-            <div class="flex sm:flex-row justify-between gap-[2rem] w-full">
-                <div class="flex flex-col text-base text-mau_xanh md:text-base lg:text-xl min-w-[20%]">
-                    <h4 class="font-bold">Navigation</h4>
-                    <ul class="mt-[1rem] flex flex-col gap-[.75rem]">
+            <div class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 justify-between gap-[2rem] text-[14px]">
+                <div class="flex flex-col text-mau_xanh md:text-base">
+                    <h4 class="font-bold text-base">Kim chỉ nam Du học</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
                         <li>
-                            <a href="#" class="nav__footer">Home</a>
+                            <a href="#" class="nav__footer">Lộ trình du học thành công</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">About Us</a>
+                            <a href="#" class="nav__footer">Tài chính du học</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">Services</a>
+                            <a href="#" class="nav__footer">Săn học bổng du học</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">Contact</a>
+                            <a href="#" class="nav__footer">Tra cứu chi phí sinh hoạt khi du học</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Hành trang du học</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Chăm sóc hậu du học</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Cơ hội việc làm và định cư</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="flex flex-col md:text-base lg:text-xl text-mau_xanh min-w-[20%]">
-                    <h4 class="font-bold">Navigation</h4>
-                    <ul class="mt-[1rem] flex flex-col gap-[.75rem]">
+                <div class="flex flex-col md:text-base text-mau_xanh">
+                    <h4 class="font-bold text-[18px]">Du học</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
                         <li>
-                            <a href="#" class="nav__footer">Home</a>
+                            <a href="#" class="nav__footer">Du học Úc</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">About Us</a>
+                            <a href="#" class="nav__footer">Du học Canada</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">Services</a>
+                            <a href="#" class="nav__footer">Du học Mỹ</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__footer">Contact</a>
+                            <a href="#" class="nav__footer">Du học New Zealand</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Du học Anh Quốc</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Du học Singapore</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col md:text-base text-mau_xanh">
+                    <h4 class="font-bold text-[18px]">Anh ngữ</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Vì sao chọn học Anh ngữ cùng COSA?</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Chương trình đào tạo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Lịch khai giảng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Cảm nhận của khách hàng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col md:text-base text-mau_xanh">
+                    <h4 class="font-bold text-[18px]">Định cư</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Định cư Úc</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Định cư Canada</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Định cư Mỹ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Định cư New Zealand</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Định cư Anh Quốc</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col md:text-base text-mau_xanh">
+                    <h4 class="font-bold text-[18px]">Dịch vụ sinh viên</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Nhà ở</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Bảo hiểm</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Dịch vụ ngân hàng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col md:text-base text-mau_xanh">
+                    <h4 class="font-bold text-[18px]">Tin tức - Sự kiện</h4>
+                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
+                        <li>
+                            <a href="#" class="nav__footer">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__footer">Sự kiện</a>
                         </li>
                     </ul>
                 </div>
