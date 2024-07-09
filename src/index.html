@@ -326,6 +326,21 @@
         <!-- Main menu -->
     </header>
 
+    <div id="searchPopup"
+        class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full hidden fixed top-[20%] left-0 h-full justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
+            <div class="flex justify-between items-center mb-4 relative">
+                <h2 class="text-xl font-semibold text-mau_xanh">Tìm kiếm</h2>
+                <button id="closeSearchPopup" class="w-10 h-10 text-xl rounded-full text-mau_trang bg-mau_xanh 
+                        absolute right-0 -top-[1rem]">&times;</button>
+            </div>
+            <div class="flex gap-8 mt-[2rem]">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." class="w-full p-2 border rounded-md">
+                <button class="bg-mau_do text-white p-2 rounded-md min-w-[100px]">Tìm kiếm</button>
+            </div>
+        </div>
+    </div>
+
     <section class="hero w-full flex bg-hero-pattern bg-no-repeat bg-cover">
         <div
             class="container flex flex-col md:flex-row md:mt-[3rem] lg:mt-[1rem] mt-[2rem] justify-center items-center align-top">
@@ -935,20 +950,21 @@
     </section>
 
     <!-- Popup tìm kiếm -->
-    <!-- <div id="searchPopup" class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full">
+    <div id="searchPopup" class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full hidden translate-y-0">
         <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
-            <div class="flex justify-between items-center mb-4">
+            <div class="flex justify-between items-center mb-4 relative">
                 <h2 class="text-xl font-semibold text-mau_xanh">Tìm kiếm</h2>
-                <button id="closeSearchPopup" class="text-xl">&times;</button>
+                <button id="closeSearchPopup" class="w-10 h-10 text-xl rounded-full text-mau_trang bg-mau_xanh 
+                    absolute right-0 -top-[1rem]">&times;</button>
             </div>
-            <div class="flex gap-8">
+            <div class="flex gap-8 mt-[2rem]">
                 <input type="text" placeholder="Nhập từ khóa tìm kiếm..." class="w-full p-2 border rounded-md">
                 <button class="bg-mau_do text-white p-2 rounded-md min-w-[100px]">Tìm kiếm</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang pb-[1.5rem]">
+    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
         <div class="container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] space-between mt-4">
             <div class="w-auto flex flex-col flex-1">
                 <img src="img/logo_footer.png" alt="logo" class="max-w-[200px]" />
@@ -1029,33 +1045,6 @@
                     </div>
 
                 </div>
-                <!-- <div class="flex flex-col text-mau_xanh md:text-base">
-                    <h4 class="font-bold text-[18px]">Kim chỉ nam Du học</h4>
-                    <ul class="mt-[0.75rem] flex flex-col gap-[0.5rem]">
-                        <li>
-                            <a href="#" class="nav__footer">Lộ trình du học thành công</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Tài chính du học</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Săn học bổng du học</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Tra cứu chi phí sinh hoạt khi du học</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Hành trang du học</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Chăm sóc hậu du học</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__footer">Cơ hội việc làm và định cư</a>
-                        </li>                        
-                    </ul>
-                </div> -->
-
 
             </div>
 
@@ -1064,7 +1053,7 @@
             <div class="container  text-gray-200 flex flex-col md:flex-row  text-[14px]">
                 <div class="flex-1">Bản quyền &copy; COSA 2024</div>
                 <div class="flex-1">
-                    <ul class="flex flex-row gap-8 text-xs self-end">
+                    <ul class="flex flex-row gap-8 text-xs justify-end">
                         <li><a href="#">Chính sách bảo mật</a></li>
                         <li><a href="#">Điều khoản sử dụng</a></li>
                     </ul>
@@ -1081,7 +1070,7 @@
     <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/menu_mobile_anim.js"></script>
-    <!-- <script src="js/search.js"></script> -->
+    <script src="js/search.js"></script>
     <!-- <script src="js/menu_mobile.js"></script> -->
 </body>
 
