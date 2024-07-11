@@ -1,11 +1,10 @@
-/* Popular Majors */
-/* Hover */
-
-/* .arrow__right {
-    transform: translate .6s ease-in-out;
-} */
-
 /* Container của menu */
+
+
+.heading__hero {
+    font-size: 40px;
+}
+
 .menu-container {
     position: relative;
 }
@@ -125,6 +124,8 @@
     transform: translateX(8px);
 }
 
+
+
 /* nav link footer */
 .nav__footer {
     position: relative;
@@ -214,13 +215,14 @@
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Đảm bảo các nút hiển thị đúng vị trí */
 
+
+/* Đảm bảo các nút hiển thị đúng vị trí */
 .custom-swiper-button-prev {
     position: absolute;
     left: 10px;
     /* Điều chỉnh vị trí theo ý muốn */
-    top: 15rem;
+    /* top: 15rem; */
     /* Điều chỉnh vị trí theo ý muốn */
     transform: translateY(-50%);
     z-index: 30;
@@ -233,7 +235,7 @@
     position: absolute;
     right: 10px;
     /* Điều chỉnh vị trí theo ý muốn */
-    top: 15rem;
+    /* top: 15rem; */
     /* Điều chỉnh vị trí theo ý muốn */
     transform: translateY(-50%);
     z-index: 30;
@@ -242,10 +244,6 @@
     align-items: center;
 }
 
-.arrow__right,
-.arrow__left {
-    font-size: 1.5rem;
-}
 
 .custom-swiper-button-prev:hover,
 .custom-swiper-button-next:hover {
@@ -253,6 +251,84 @@
     /* Màu nền khi hover */
     color: white;
     /* Màu chữ khi hover */
+}
+
+/* swiperjs 2 */
+
+
+.swiper_btn_prev,
+.swiper_btn_next {
+    /* opacity: 0;
+    visibility: hidden; */
+
+    /* CSS tùy chỉnh cho hình ảnh nút */
+    width: 50px;
+    /* Điều chỉnh kích thước theo ý muốn */
+    height: 50px;
+    /* Điều chỉnh kích thước theo ý muốn */
+    background-color: gray;
+    border-radius: 50%;
+
+    /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.swiper_btn_prev {
+    position: absolute;
+    left: 10px;
+    /* Điều chỉnh vị trí theo ý muốn */
+    top: 8rem;
+    /* Điều chỉnh vị trí theo ý muốn */
+    transform: translateY(-50%);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper_btn_next {
+    position: absolute;
+    right: 10px;
+    /* Điều chỉnh vị trí theo ý muốn */
+    top: 8rem;
+    /* Điều chỉnh vị trí theo ý muốn */
+    transform: translateY(-50%);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.swiper_btn_prev:hover,
+.swiper_btn_next:hover {
+    background-color: #e23b32;
+    /* Màu nền khi hover */
+    color: white;
+    /* Màu chữ khi hover */
+}
+
+.swiper2 {
+    overflow: hidden;
+}
+
+
+.swiper-slide {
+    flex: 0 0 auto;
+}
+
+
+.swiper2 {
+    width: 100%;
+    max-width: 100vw;
+}
+
+.arrow__right,
+.arrow__left {
+    font-size: 1.5rem;
 }
 
 /* Testimonial */
@@ -280,3 +356,115 @@
     opacity: 0;
 }
 
+/* .testimonial {
+    position: relative;
+    display:inline-block;
+}
+
+.testimonial::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:-.5rem;
+    height: 2px;
+  
+    width: fit-content;
+    background-color: #6A799D;
+
+
+} */
+/* 
+.swiper:hover .custom-swiper-button-prev,
+.swiper:hover .custom-swiper-button-next {
+    opacity: 1;
+   
+    visibility: visible;
+   
+} */
+
+/* Styles for the submenu */
+
+/* 
+.mobile__menu {
+    position: absolute;
+    top: 6rem;
+    right: -100%;  
+    width: 100vw;
+    height: auto;
+    background-color: #22376e;
+    overflow-x: hidden;
+    transition:0.5s ease;
+    cursor: pointer;
+   
+}
+
+.mobile__menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:2rem;
+    position: relative;
+    padding: 2rem;
+    transition: 0.5s ease;
+  
+}
+
+.mobile__menu ul li {
+    margin-bottom: 2rem;
+}
+
+.mobile__menu ul li a {
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mobile__menu ul li.has__mobile__submenu ul{
+    position: absolute;
+    top:2rem;
+    left: 90%;
+    visibility: visible;
+    margin-top: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+  
+}
+
+.mobile__menu ul li ul li {
+    white-space: nowrap;
+
+}
+
+.arrow__left {
+    opacity: 0;
+}
+
+.arrow__left.show {
+    opacity: 1;
+}
+
+
+.btn__back {
+    color: #fff;
+    font-size:1.25rem;
+    display: none;
+}
+
+.btn__back.show {
+    display: block;
+}
+
+.mobile__menu ul.slideOut {
+    transform: translateX(-90%);
+}
+
+
+.mobile__menu ul li.has__mobile__submenu ul.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile__menu.slideIn {
+    right: 0;
+    
+} */

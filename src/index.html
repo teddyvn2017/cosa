@@ -39,7 +39,7 @@
             <div class="flex flex-row mx-auto lg:container justify-between items-center">
 
                 <!-- Logo -->
-                <img src="img/logo.png" alt="logo" class="lg:w-40 md:w-24" />
+                <img src="img/logo.png" alt="logo" class="lg:w-40 md:w-24 w-36" />
                 <!-- <div class="flex flex-col leading-3 text-[14px] md:text-xs lg:text-base gap-[.5rem] md:gap-[.25rem]">
                         <h3 class="font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
                         <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
@@ -326,8 +326,7 @@
         <!-- Main menu -->
     </header>
 
-    <div id="searchPopup"
-        class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full hidden fixed top-[20%] left-0 h-full justify-center items-center">
+    <div id="searchPopup" class="z-50 flex-col w-full hidden fixed top-[20%] left-0 h-full justify-center items-center">
         <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
             <div class="flex justify-between items-center mb-4 relative">
                 <h2 class="text-xl font-semibold text-mau_xanh">Tìm kiếm</h2>
@@ -440,7 +439,7 @@
             class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] hidden">
         <h2 class="text-[2rem] text-mau_xanh font-bold">Quốc gia du học</h2>
         <div class="lg:px-[6rem] relative">
-            <div class="custom-swiper-button-prev">
+            <div class="custom-swiper-button-prev md:top-[10rem] lg:top-[15rem]">
                 <i class="ri-arrow-left-s-line arrow__left"></i>
             </div>
             <div class="swiper mt-[1.25rem] flex flex-col md:flex-row py-[2rem] justify-center">
@@ -521,7 +520,7 @@
 
                 </div>
             </div>
-            <div class="custom-swiper-button-next">
+            <div class="custom-swiper-button-next md:top-[10rem] lg:top-[15rem]">
                 <i class="ri-arrow-right-s-line arrow__right"></i>
             </div>
         </div>
@@ -667,51 +666,15 @@
 
     <!-- Why choose us -->
     <section class="mt-[5rem] w-full">
-        <!-- <div class="flex flex-col md:flex-row container justify-center items-start flex-1 gap-[2rem]">
-            <div class="flex flex-col gap-[2rem] w-full"> 
-                <h1 class="text-4xl font-semibold text-mau_xanh">Cam kết chất lượng dịch vụ tại COSA</h1>
-                <div class="flex flex-row">
-                    <i class="ri-arrow-right-double-line"></i>
-                    <h2 class="text-mau_xanh font-medium text-base md:text-xl">
-                        Thẩm định năng lực hồ sơ du học, tối ưu chi phí
-                    </h2>
-                </div>
-                <div class="flex flex-row">
-                    <i class="ri-arrow-right-double-line"></i>
-                    <h2 class="text-mau_xanh font-medium text-base md:text-xl">
-                        Tư vấn lựa chọn quốc gia, trường và ngành học phù hợp
-                    </h2>
-                </div>
-
-                <div class="flex flex-row">
-                    <i class="ri-arrow-right-double-line"></i>
-                    <h2 class="text-mau_xanh font-medium text-base md:text-xl">Hướng dẫn thủ tục ghi danh trường, miễn giảm tín chỉ và xin
-                        học bổng</h2>
-                </div>
-
-                <div class="flex flex-row">
-                    <i class="ri-arrow-right-double-line"></i>
-                    <h2 class="text-mau_xanh font-medium text-base md:text-xl">Hướng dẫn nộp hồ sơ xin visa</h2>
-                </div>
-                <div class="flex flex-row">
-                    <i class="ri-arrow-right-double-line"></i>
-                    <h2 class="text-mau_xanh font-medium text-base md:text-xl">Tư vấn việc làm và định cư cho cả gia đình</h2>
-                </div>                
-               
-                
-            </div>
-            <img src="img/cam_ket.jpg" alt="image" class="w-full shadow-lg">
-        </div> -->
-
         <div class="text-center mt-[3rem] container">
             <h2 class="text-[2rem] font-semibold text-mau_xanh">Cam kết chất lượng dịch vụ tại COSA</h2>
 
         </div>
 
         <div class="mt-[3rem] flex justify-center w-full bg-mau_xanh_50 py-[6rem] h-fit">
-            <div class="container flex flex-wrap justify-center gap-[3rem] text-center items-stretch">
-                <div
-                    class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow lg:max-w-[240px] p-8">
+            <div class="container flex flex-wrap justify-center md:gap-[4.5rem] gap-[5rem] text-center items-stretch">
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] 
+                        text-xl flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center">
                         <div class="rounded-full text-2xl text-mau_trang">1</div>
@@ -720,18 +683,18 @@
                     </p>
                 </div>
 
-                <div
-                    class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow lg:max-w-[240px] p-8">
-                    <div
-                        class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-red-600 rounded-full flex items-center justify-center">
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]
+                     text-xl flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
+                    <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-red-600 
+                            rounded-full flex items-center justify-center">
                         <div class="rounded-full text-2xl text-mau_trang">2</div>
                     </div>
                     <p class="text-gray-600 px-4 text-[1.25rem] mt-12">Tư vấn lựa chọn quốc gia, trường và ngành học phù
                         hợp</p>
                 </div>
 
-                <div
-                    class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow lg:max-w-[240px] p-8">
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                        lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center text-mau_trang text-2xl">
                         3</div>
@@ -740,16 +703,16 @@
                         bổng</p>
                 </div>
 
-                <div
-                    class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow lg:max-w-[240px] p-8">
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                        lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_do rounded-full flex items-center justify-center text-mau_trang text-2xl">
                         4</div>
                     <p class="text-gray-600 px-4 text-[1.25rem] mt-12">Hướng dẫn nộp hồ sơ xin visa</p>
                 </div>
 
-                <div
-                    class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow lg:max-w-[240px] p-8">
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                        lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center text-mau_trang text-2xl">
                         5</div>
@@ -757,9 +720,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
 
     <section class="mt-[6rem] relative container">
@@ -780,7 +740,7 @@
                 <!-- <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2> -->
                 <h2 class="text-mau_xanh font-bold text-[2rem] mt-[2.5rem] mb-[2rem]">Khách hàng đánh giá dịch vụ COSA
                 </h2>
-                <p class="text-mau_xanh_300 leading-10 md:max-w-[80%] lg:max-w-[80%] w-[100%] text-xl">
+                <p class="text-mau_xanh_300 leading-10 md:max-w-[90%] lg:max-w-[80%] w-[100%] text-xl">
                     Với hơn 10 năm kinh nghiệm, đội ngũ chuyên gia của chúng tôi là người đồng hành đáng tin cậy, giúp
                     học sinh hiện thực
                     hóa ước mơ du học. Từ lựa chọn ngành học, trường phù hợp đến hỗ trợ hồ sơ, visa, chúng tôi đồng hành
@@ -936,15 +896,36 @@
     </section>
 
     <section class="mt-[5rem] relative container">
-        <div class="flex flex-col">
-            <h2 class="text-2xl text-mau_xanh font-bold w-full text-center mb-[2.5rem]">Trường đối tác</h2>
-            <div class="flex gap-[2.5rem] flex-wrap
-                sm:flex-row justify-center items-stretch">
-                <img src="img/na_university.png" alt="image">
-                <img src="img/na_university.png" alt="image">
-                <img src="img/na_university.png" alt="image">
-                <img src="img/na_university.png" alt="image">
-                <img src="img/na_university.png" alt="image">
+        <h2 class="text-2xl text-mau_xanh font-bold w-full text-center mb-[1.5rem]">Trường đối tác</h2>
+        <!-- Slider main container -->
+        <div class="swiper-container swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper_btn_next">
+                <i class="ri-arrow-right-s-line arrow__right"></i>
+            </div>
+            <div class="swiper_btn_prev">
+                <i class="ri-arrow-left-s-line arrow__left"></i>
             </div>
         </div>
     </section>
