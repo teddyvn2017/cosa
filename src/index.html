@@ -257,13 +257,13 @@
                 </div>
 
                 <!-- menu mobile -->
-                <div class="md:hidden absolute left-0 top-[8.75rem] w-screen h-auto">
-                    <ul class="flex flex-col gap-[1.5rem] items-start pt-[1rem] w-full z-30 bg-mau_xanh uppercase text-mau_trang 
+                <div class="md:hidden absolute left-0 top-[5rem] w-screen h-auto">
+                    <ul class="flex flex-col gap-[2.5rem] items-start pt-[1rem] w-full z-30 bg-mau_xanh uppercase text-mau_trang 
                                 text-base opacity-0 h-0 menuMobile container">
                         <li class="has__submenu w-full">
                             <div class="flex flex-row nav__link-mobile gap-[2.5rem]">
                                 <a href="#" class="menu-item">Kim chỉ nam du học</a>
-                                <i class="ri-add-line toggle-icon"></i>
+                                <i class="ri-add-line toggle-icon cursor-pointer"></i>
                             </div>
                             <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
                                 <li><a href="#" class="nav__link-mobile">Lộ trình du học thành công</a></li>
@@ -277,10 +277,10 @@
                             </ul>
                         </li>
 
-                        <li class="has__submenu w-full">
+                        <li class="has__submenu w-full pt-4">
                             <div class="flex flex-row nav__link-mobile gap-[2.5rem]">
                                 <a href="#" class="menu-item">Du học</a>
-                                <i class="ri-add-line toggle-icon"></i>
+                                <i class="ri-add-line toggle-icon cursor-pointer"></i>
                             </div>
                             <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
                                 <li><a href="#" class="nav__link-mobile">Du học Úc</a></li>
@@ -291,10 +291,10 @@
                                 <li><a href="#" class="nav__link-mobile">Du học Singapore</a></li>
                             </ul>
                         </li>
-                        <li class="has__submenu w-full">
+                        <li class="has__submenu w-full pt-4">
                             <div class="flex flex-row nav__link-mobile gap-[2rem]">
                                 <a href="#" class="menu-item">Anh ngữ</a>
-                                <i class="ri-add-line toggle-icon"></i>
+                                <i class="ri-add-line toggle-icon cursor-pointer"></i>
                             </div>
                             <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
                                 <li><a href="#" class="nav__link-mobile float-left">Vì sao chọn học Anh ngữ cùng
@@ -304,10 +304,10 @@
                                 <li><a href="#" class="nav__link-mobile">Cảm nhận của khách hàng</a></li>
                             </ul>
                         </li>
-                        <li class="has__submenu w-full">
+                        <li class="has__submenu w-full pt-4">
                             <div class="flex flex-row nav__link-mobile gap-[2rem]">
                                 <a href="#" class="menu-item">Định cư</a>
-                                <i class="ri-add-line toggle-icon"></i>
+                                <i class="ri-add-line toggle-icon cursor-pointer"></i>
                             </div>
                             <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
                                 <li><a href="#" class="nav__link-mobile">Định cư Úc</a></li>
@@ -317,10 +317,10 @@
                                 <li><a href="#" class="nav__link-mobile">Định cư Anh Quốc</a></li>
                             </ul>
                         </li>
-                        <li class="has__submenu w-full">
+                        <li class="has__submenu w-full pt-4">
                             <div class="flex flex-row nav__link-mobile gap-[2rem]">
                                 <a href="#" class="menu-item">Dịch vụ sinh viên</a>
-                                <i class="ri-add-line toggle-icon"></i>
+                                <i class="ri-add-line toggle-icon cursor-pointer"></i>
                             </div>
                             <ul class="submenu pl-[.75rem] pt-[1.25rem] pb-[1.5rem]">
                                 <li><a href="#" class="nav__link-mobile">Nhà ở</a></li>
@@ -328,14 +328,12 @@
                                 <li><a href="#" class="nav__link-mobile">Dịch vụ ngân hàng</a></li>
                             </ul>
                         </li>
-                        <li class="px-[20px] py-[10px]"><a href="#">Liên hệ</a></li>
+                        <li class="px-[20px] py-[10px] pt-4"><a href="#">Liên hệ</a></li>
                         <!-- <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
                             <a href="#">Apply Now</a>
                         </li> -->
                     </ul>
                 </div>
-
-
 
                 <svg viewBox="0 0 12 10" class="hamburger md:hidden cursor-pointer" height="40px" width="32px"
                     id="menuToggle">
@@ -978,7 +976,18 @@
         </div>
     </div>
 
-    <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
+    <section class="mt-[5rem] w-full bg-gradient-to-r from-[#21376d] to-[#121e3c] min-h-36 relative">
+
+        <div class="flex flex-row items-center justify-center min-h-32 text-mau_trang gap-8">
+
+            <p class="text-xl">Liên hệ tư vấn MIỄN PHÍ</p>
+            <a href="#" class="bg-mau_do rounded-full px-4 py-2 z-20 font-medium text-xl">ĐĂNG KÝ NGAY</a>
+        </div>
+        <img src="img/bg_lienhe.png" alt="image" class="absolute inset-0 w-full h-full object-cover z-0">
+
+    </section>
+
+    <footer class="w-full bg-mau_trang">
         <div class="2xl:container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] space-between mt-4 px-8">
             <div class="w-auto flex flex-col flex-1">
                 <img src="img/logo_footer.png" alt="logo" class="max-w-[200px]" />
