@@ -279,7 +279,7 @@
     position: absolute;
     left: 10px;
     /* Điều chỉnh vị trí theo ý muốn */
-    top: 8rem;
+    top: 7.25rem;
     /* Điều chỉnh vị trí theo ý muốn */
     transform: translateY(-50%);
     z-index: 30;
@@ -292,7 +292,7 @@
     position: absolute;
     right: 10px;
     /* Điều chỉnh vị trí theo ý muốn */
-    top: 8rem;
+    top: 7.25rem;
     /* Điều chỉnh vị trí theo ý muốn */
     transform: translateY(-50%);
     z-index: 30;

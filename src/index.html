@@ -17,45 +17,68 @@
     <header class="sticky left-0 top-0 h-auto w-full bg-mau_xanh z-50">
 
         <!-- top nav -->
-        <div class="flex flex-row py-[16px] gap-8 h-auto w-full container
-                mx-auto text-mau_trang md:justify-end lg:justify-end justify-center md:text-base lg:text-xl">
-            <!-- <div class="flex flex-row gap-2">
-                <i class="ri-mail-line"></i>
-                <p>cosa@gmail.com</p>
-            </div> -->
-            <div class="flex flex-row gap-[0.25rem]">
-                <a href="#">Tin tức</a> - <a>Sự kiện</a>
+        <!-- <div class="flex flex-row py-[16px] gap-8 h-auto w-full container
+                mx-auto text-mau_trang md:justify-end lg:justify-end justify-center md:text-base lg:text-xl"> -->
+
+        <div class="2xl:container flex flex-row py-2 gap-8 h-auto text-mau_trang justify-between 
+                md:text-base px-8 lg:text-xl items-center">
+            <div class="hidden md:block" id="column1">
+                <img src="img/white_logo.png" alt="image" class="hidden md:block lg:hidden xl:hidden max-w-20">
+            </div>
+            <div class="flex-row gap-8 justify-end md:text-sm lg:text-base hidden md:block" id="column2">
+                <div class="flex gap-8">
+                    <a href="#">Tin tức - Sự kiện</a>
+                    <a href="#">Liên hệ</a>
+                    <div class="flex flex-row gap-2">
+                        <i class="ri-phone-line"></i>
+                        <p>0903.095.091</p>
+                    </div>
+                </div>
             </div>
 
-            <a href="#">Liên hệ</a>
-
-            <div class="flex flex-row gap-2">
-                <i class="ri-phone-line"></i>
-                <p>0903.095.091</p>
+            <div class="md:hidden">
+                <div class="flex flex-col gap-2 text-base">
+                    <div class="flex flex-row gap-8">
+                        <a href="#">Tin tức - Sự kiện</a>
+                        <a href="#">Liên hệ</a>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <i class="ri-phone-line"></i>
+                        <p>0903.095.091</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+
         <div class="bg-mau_trang p-4 drop-shadow-lg">
-            <div class="flex flex-row mx-auto lg:container justify-between items-center">
+            <div class="flex flex-row mx-auto xl:container justify-between items-center">
 
                 <!-- Logo -->
-                <img src="img/logo.png" alt="logo" class="lg:w-40 md:w-24 w-36" />
+                <img src="img/logo.png" alt="logo" class="lg:w-36 md:w-24 w-36 md:hidden lg:block" />
+
                 <!-- <div class="flex flex-col leading-3 text-[14px] md:text-xs lg:text-base gap-[.5rem] md:gap-[.25rem]">
                         <h3 class="font-bold text-mau_xanh">C<span class="text-mau_do">O</span>SA</h3>
                         <h4 class="text-mau_xanh font-semibold">CONNECT STUDY ABROAD</h4>
                     </div> -->
 
-
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(34,55,110,1)" class="md:block lg:hidden">
+                    <path
+                        d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19ZM8 15H16V17H8V15Z">
+                    </path>
+                </svg> -->
                 <!-- Menu desktop -->
                 <div class="flex flex-row">
                     <div class="hidden md:flex items-center menu-container">
                         <div class="menu-background"></div>
-                        <ul class="flex lg:gap-[1rem] text-mau_xanh md:text-sm lg:text-xl nav-items">
+                        <ul
+                            class="flex xl:gap-4 lg:gap-[1rem] text-mau_xanh md:text-sm lg:text-base xl:text-xl nav-items">
                             <li class="group relative">
+
                                 <a href="#" class="nav__link px-[20px] py-[10px]">
                                     Kim chỉ nam du học
 
-                                    <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="ml-2 h-4 w-4 float-right mt-[.25rem]" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -95,7 +118,7 @@
                                 <a href="#" class="nav__link px-[20px] py-[10px]">
                                     Du học
 
-                                    <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="ml-2 h-4 w-4 float-right mt-[.25rem]" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -129,7 +152,7 @@
                                 <a href="#" class="nav__link px-[20px] py-[10px]">
                                     Anh ngữ
 
-                                    <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="ml-2 h-4 w-4 float-right mt-[.25rem]" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -163,7 +186,7 @@
                             <li class="group relative">
                                 <a href="#" class="nav__link px-[20px] py-[10px]">
                                     Định cư
-                                    <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="ml-2 h-4 w-4 float-right mt-[.25rem]" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -191,7 +214,7 @@
                             <li class="group relative">
                                 <a href="#" class="nav__link px-[20px] py-[10px]">
                                     Dịch vụ sinh viên
-                                    <svg class="ml-2 h-4 w-4 float-right mt-[.5rem]" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="ml-2 h-4 w-4 float-right mt-[.25rem]" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -342,7 +365,7 @@
 
     <section class="hero w-full flex bg-hero-pattern bg-no-repeat bg-cover">
         <div
-            class="container flex flex-col md:flex-row md:mt-[3rem] lg:mt-[1rem] mt-[2rem] justify-center items-center align-top">
+            class="lg:container flex flex-col md:flex-row md:mt-[3rem] px-8 lg:mt-[1rem] mt-[2rem] justify-center items-center align-top">
             <div class="rounded-[2rem] text-mau_trang basis-2/4">
                 <h1 class="text-[40px] font-bold text-mau_do leading-normal heading__hero">
                     Study Abroad Programs <br />
@@ -373,7 +396,8 @@
 
     </section>
 
-    <section class="w-full bg-no-repeat bg-cover mt-[8rem] container md:overflow-x-clip 2xl:overflow-visible">
+    <section
+        class="w-full bg-no-repeat bg-cover mt-[8rem] 2xl:container md:overflow-x-clip md:px-8 2xl:overflow-visible">
         <div class="flex md:flex-row flex-col gap-[3rem] relative justify-center items-center">
             <div class="absolute z-0 -top-[2rem] -right-[2rem] w-[80px] h-[80px]
                         md:-top-[3rem] md:left-[44%]
@@ -402,7 +426,7 @@
             <div class="relative bg-mau_xanh rounded-[.75rem] text-mau_trang p-8 w-full 
                 md:max-w-none z-10 flex-1 h-fit" id="about__us">
                 <!-- <h2 class="font-bold xl:text-3xl lg:text-2xl md:text-base">Giới thiệu COSA</h2> -->
-                <h2 class="md:text-[2rem] text-xl mt-[1rem] font-bold leading-tight">
+                <h2 class="md:text-[1.5rem] text-xl mt-[1rem] font-bold leading-tight">
                     COSA - người bạn đồng hành tin cậy trên con đường du học của bạn
                 </h2>
                 <p class="mt-[1rem] text-base lg:text-xl leading-normal">
@@ -433,13 +457,12 @@
         </div>
     </section>
 
-    <section
-        class="lg:mt-[6rem] md:mt-[10rem] container relative z-20 pt-[4rem] md:overflow-x-clip 2xl:overflow-visible">
+    <section class="lg:mt-[6rem] md:mt-[7rem] lg:container px-8 relative z-20 md:overflow-x-clip 2xl:overflow-visible">
         <img src="img/side_logo.png" alt="image"
             class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] hidden">
-        <h2 class="text-[2rem] text-mau_xanh font-bold">Quốc gia du học</h2>
+        <h2 class="text-[2rem] md:text-[1.75rem] text-mau_xanh font-bold">Quốc gia du học</h2>
         <div class="lg:px-[6rem] relative">
-            <div class="custom-swiper-button-prev md:top-[10rem] lg:top-[15rem]">
+            <div class="custom-swiper-button-prev top-[15rem] md:top-[11rem] lg:top-[12rem] xl:top-[13rem]">
                 <i class="ri-arrow-left-s-line arrow__left"></i>
             </div>
             <div class="swiper mt-[1.25rem] flex flex-col md:flex-row py-[2rem] justify-center">
@@ -520,15 +543,15 @@
 
                 </div>
             </div>
-            <div class="custom-swiper-button-next md:top-[10rem] lg:top-[15rem]">
+            <div class="custom-swiper-button-next top-[15rem] md:top-[11rem] lg:top-[12rem] xl:top-[13rem]">
                 <i class="ri-arrow-right-s-line arrow__right"></i>
             </div>
         </div>
 
     </section>
 
-    <section class="mt-[5rem] container">
-        <div class="mb-[2rem] bg-mau_trang">
+    <section class="mt-[5rem]">
+        <div class="mb-[2rem] bg-mau_trang 2xl:container px-8">
             <h2 class="text-mau_xanh text-[2rem] font-bold mb-[2rem]">Ngành du học phổ biến</h2>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 
@@ -665,16 +688,17 @@
     </section>
 
     <!-- Why choose us -->
-    <section class="mt-[5rem] w-full">
-        <div class="text-center mt-[3rem] container">
-            <h2 class="text-[2rem] font-semibold text-mau_xanh">Cam kết chất lượng dịch vụ tại COSA</h2>
+    <section class="mt-[5rem] md:mt-[7rem] w-full">
+        <div class="text-center mt-[3rem] lg:container md:px-8">
+            <h2 class="text-[2rem] font-semibold text-mau_xanh md:text-[1.75rem]">Cam kết chất lượng dịch vụ tại COSA
+            </h2>
 
         </div>
 
-        <div class="mt-[3rem] flex justify-center w-full bg-mau_xanh_50 py-[6rem] h-fit">
+        <div class="mt-[3rem] flex justify-center w-full bg-mau_xanh_50 py-[6rem] h-fit text-xl md:text-[1.5rem]">
             <div class="container flex flex-wrap justify-center md:gap-[4.5rem] gap-[5rem] text-center items-stretch">
                 <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] 
-                        text-xl flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
+                        flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center">
                         <div class="rounded-full text-2xl text-mau_trang">1</div>
@@ -684,7 +708,7 @@
                 </div>
 
                 <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]
-                     text-xl flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
+                     flex flex-col items-center flex-grow lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-red-600 
                             rounded-full flex items-center justify-center">
                         <div class="rounded-full text-2xl text-mau_trang">2</div>
@@ -693,7 +717,7 @@
                         hợp</p>
                 </div>
 
-                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] flex flex-col items-center flex-grow 
                         lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center text-mau_trang text-2xl">
@@ -703,7 +727,7 @@
                         bổng</p>
                 </div>
 
-                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] flex flex-col items-center flex-grow 
                         lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_do rounded-full flex items-center justify-center text-mau_trang text-2xl">
@@ -711,7 +735,7 @@
                     <p class="text-gray-600 px-4 text-[1.25rem] mt-12">Hướng dẫn nộp hồ sơ xin visa</p>
                 </div>
 
-                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] text-xl flex flex-col items-center flex-grow 
+                <div class="relative bg-white rounded-[.75rem] shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] flex flex-col items-center flex-grow 
                         lg:max-w-[240px] md:max-w-[280px] p-8">
                     <div
                         class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-mau_xanh rounded-full flex items-center justify-center text-mau_trang text-2xl">
@@ -722,7 +746,7 @@
         </div>
     </section>
 
-    <section class="mt-[6rem] relative container">
+    <section class="mt-[6rem] relative 2xl:container px-8">
         <div class="hidden absolute z-0 
                             md:block                   
                             bottom-[10rem] md:-left-[15rem] 
@@ -738,9 +762,10 @@
             <div class="flex flex-col basis-2/4">
                 <!-- <h2 class="text-mau_xanh_300 text-2xl font-light">Khách hàng cảm nhận chất lượng dịch vụ của COSA</h2> -->
                 <!-- <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2> -->
-                <h2 class="text-mau_xanh font-bold text-[2rem] mt-[2.5rem] mb-[2rem]">Khách hàng đánh giá dịch vụ COSA
-                </h2>
-                <p class="text-mau_xanh_300 leading-10 md:max-w-[90%] lg:max-w-[80%] w-[100%] text-xl">
+                <h2 class="text-mau_xanh font-bold text-[2rem] md:text-[1.5rem] mb-[1.25rem]">Khách hàng đánh giá dịch
+                    vụ COSA</h2>
+                <p
+                    class="text-mau_xanh_300 leading-10 md:max-w-[90%] md:text-[18px] md:leading-normal lg:max-w-[80%] w-[100%] text-xl">
                     Với hơn 10 năm kinh nghiệm, đội ngũ chuyên gia của chúng tôi là người đồng hành đáng tin cậy, giúp
                     học sinh hiện thực
                     hóa ước mơ du học. Từ lựa chọn ngành học, trường phù hợp đến hỗ trợ hồ sơ, visa, chúng tôi đồng hành
@@ -752,8 +777,9 @@
             </div>
             <div class="relative">
                 <img src="img/testimonial.png" alt="image" class="rounded-[1rem] basis-2/4 w-[80%] ml-auto">
-                <div class="absolute bg-[#e9ebf0] lg:p-[2rem] p-[1rem] -bottom-[4rem] lg:-left-[9rem] rounded-[.75rem] 
-                    text-base z-20 lg:w-[120%] w-[90%] border-l-8 border-mau_xanh md:bottom-[1rem] lg:-bottom-[3rem]">
+                <div
+                    class="absolute bg-[#e9ebf0] lg:p-[2rem] p-[1rem] -bottom-[4rem] lg:-left-[9rem] rounded-[.75rem] 
+                    text-base z-20 lg:w-[120%] w-[90%] border-l-8 border-mau_xanh md:top-[14rem] md:h-fit lg:-bottom-[3rem]">
                     <div class="text-mau_xanh_400 border-l-2 border-x-mau_xanh_300 pl-4">
                         <p>
                             "Thank you so much for your help. It's exactly what I've been looking for. You won't regret
@@ -784,19 +810,19 @@
         </div> -->
     </section>
 
-    <section class="mt-[14rem] container relative z-30">
+    <section class="mt-[14rem] container relative z-30 md:mt-[10rem]">
 
-        <h2 class="text-[2rem] text-mau_do text-center font-bold">Tin tức và sự kiện du học</h2>
+        <h2 class="text-[2rem] md:text-[1.75rem] text-mau_do text-center font-bold">Tin tức và sự kiện du học</h2>
         <div class="flex md:flex-row flex-col mt-[2rem]">
             <div class="flex flex-col lg:flex-row gap-[32px]">
-                <div class="flex flex-col md:basis-2/4 shadow-lg p-[1rem] rounded-[1rem] bg-mau_trang w-full"
+                <div class="flex flex-col md:basis-2/4 shadow-lg p-[1rem] rounded-[1rem] bg-mau_trang w-full h-fit"
                     id="cot_trai">
 
                     <img src="img/hot_news.jpg" alt="image" class="rounded-[1rem] shadow-md">
 
                     <button class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
-                            w-fit justify-start rounded-[1rem] mt-[1rem]">TIN TỨC</button>
-                    <h3 class="text-mau_xanh font-bold mt-[1.25rem] text-xl mb-[1.5rem]">
+                            w-fit justify-start rounded-[.5rem] mt-[1rem]">TIN TỨC</button>
+                    <h3 class="text-mau_xanh font-bold mt-[1.25rem] text-xl md:text-[1.5rem] mb-[1.5rem]">
                         Lorem ipsum dolor sit amet consectetur. posuere cras purus.
                     </h3>
                     <p class="text-mau_xanh text-base leading-5">
@@ -812,8 +838,8 @@
 
                 <div class="flex flex-col gap-[2rem]" id="cot_phai">
 
-                    <div
-                        class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px]">
+                    <div class="h-fit bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle 
+                            gap-[2rem] p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px]">
                         <div class="relative grid">
                             <img src="img/news1.png" alt="image" class="rounded-[8px] w-full h-full aspect-auto">
                             <p
@@ -823,23 +849,23 @@
                         </div>
 
                         <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.
+                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem] lg:text-[1.25rem]">Lorem
+                                ipsum dolor sit amet consectetur.
                             </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
                                 Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
                                 duis
                                 accumsan.
                             </p>
-                            <!-- <a href="#" class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
-                                                        w-fit justify-start rounded-[0.5rem] mt-[1rem]">Đọc tiếp</a> -->
-                            <p class="font-semibold text-base underline underline-offset-8 text-mau_xanh mt-[2rem]">
+
+                            <p class="font-semibold text-base underline underline-offset-8 text-mau_xanh mt-[0.75rem]">
                                 Đọc tiếp
                             </p>
                         </div>
                     </div>
 
                     <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
-                                shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px]">
+                                shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px] h-fit">
                         <div class="relative grid">
                             <img src="img/news2.jpg" alt="image" class="rounded-[8px] w-full h-full">
                             <p
@@ -848,9 +874,10 @@
                             </p>
                         </div>
                         <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.
+                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem] lg:text-[1.25rem]">Lorem
+                                ipsum dolor sit amet consectetur.
                             </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
                                 Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
                                 duis
                                 accumsan.
@@ -858,7 +885,7 @@
 
                             <!-- <a href="#" class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
                             w-fit justify-start rounded-[0.5rem] mt-[1rem]">Đọc tiếp</a> -->
-                            <p class="font-semibold text-base underline text-mau_xanh mt-[2rem] underline-offset-8">
+                            <p class="font-semibold text-base underline text-mau_xanh mt-[0.75rem] underline-offset-8">
                                 Đọc tiếp
                             </p>
                         </div>
@@ -874,16 +901,17 @@
                             </p>
                         </div>
                         <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl">Lorem ipsum dolor sit amet consectetur.
+                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem]  lg:text-[1.25rem]">Lorem
+                                ipsum dolor sit amet consectetur.
                             </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.5rem] pb-[1rem]">
+                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
                                 Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
                                 duis
                                 accumsan.
                             </p>
                             <!-- <a href="#" class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
                                                         w-fit justify-start rounded-[0.5rem] mt-[1rem]">Đọc tiếp</a> -->
-                            <p class="font-semibold text-base underline text-mau_xanh mt-[2rem] underline-offset-8">
+                            <p class="font-semibold text-base underline text-mau_xanh mt-[0.75rem] underline-offset-8">
                                 Đọc tiếp
                             </p>
                         </div>
@@ -896,38 +924,43 @@
     </section>
 
     <section class="mt-[5rem] relative container">
-        <h2 class="text-2xl text-mau_xanh font-bold w-full text-center mb-[1.5rem]">Trường đối tác</h2>
+        <h2 class="text-2xl text-mau_xanh font-bold w-full text-center mb-[1.5rem] md:text-[1.75rem]">Trường đối tác
+        </h2>
         <!-- Slider main container -->
-        <div class="swiper-container swiper2">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
+        <div class="lg:px-[6rem]">
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/na_university.png" alt="image" class="mx-auto">
+                    </div>
+                    <!-- Add more slides as needed -->
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                <!-- Add Arrows -->
+                <div class="swiper_btn_next">
+                    <i class="ri-arrow-right-s-line arrow__right"></i>
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
+                <div class="swiper_btn_prev">
+                    <i class="ri-arrow-left-s-line arrow__left"></i>
                 </div>
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/na_university.png" alt="image" class="mx-auto">
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-            <!-- Add Arrows -->
-            <div class="swiper_btn_next">
-                <i class="ri-arrow-right-s-line arrow__right"></i>
-            </div>
-            <div class="swiper_btn_prev">
-                <i class="ri-arrow-left-s-line arrow__left"></i>
             </div>
         </div>
+
+
     </section>
 
     <!-- Popup tìm kiếm -->
@@ -946,10 +979,10 @@
     </div>
 
     <footer class="mt-[6rem] w-full shadow-[0px_-10px_20px_10px_#00000024] bg-mau_trang">
-        <div class="container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] space-between mt-4">
+        <div class="2xl:container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] space-between mt-4 px-8">
             <div class="w-auto flex flex-col flex-1">
                 <img src="img/logo_footer.png" alt="logo" class="max-w-[200px]" />
-                <div class="flex flex-col md:flex-row py-8 md:space-between">
+                <div class="flex flex-col md:flex-row py-8 md:space-between gap-8">
                     <div class="flex-1">
                         <h3 class="font-semibold text-[18px] text-mau_xanh">Giới thiệu về COSA</h3>
                         <ul class="text-base text-mau_xanh flex flex-col gap-2 mt-2">
@@ -1030,11 +1063,11 @@
             </div>
 
         </div>
-        <div class="w-full  bg-mau_xanh py-4">
-            <div class="container  text-gray-200 flex flex-col md:flex-row  text-[14px]">
-                <div class="flex-1">Bản quyền &copy; COSA 2024</div>
+        <div class="w-full  bg-mau_xanh py-4 2xl:container px-8">
+            <div class=" text-gray-200 flex flex-col md:flex-row gap-4 text-[14px]">
+                <div class="flex-1 self-center">Bản quyền &copy; COSA 2024</div>
                 <div class="flex-1">
-                    <ul class="flex flex-row gap-8 text-xs justify-end">
+                    <ul class="flex flex-row gap-8 text-xs md:justify-end justify-center">
                         <li><a href="#">Chính sách bảo mật</a></li>
                         <li><a href="#">Điều khoản sử dụng</a></li>
                     </ul>
