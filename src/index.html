@@ -15,11 +15,6 @@
 <body class="font-sans">
 
     <header class="sticky left-0 top-0 h-auto w-full bg-mau_xanh z-50">
-
-        <!-- top nav -->
-        <!-- <div class="flex flex-row py-[16px] gap-8 h-auto w-full container
-                mx-auto text-mau_trang md:justify-end lg:justify-end justify-center md:text-base lg:text-xl"> -->
-
         <div class="2xl:container flex flex-row py-2 gap-8 h-auto text-mau_trang justify-between 
                 md:text-base px-8 lg:text-xl items-center">
             <div class="hidden md:block" id="column1">
@@ -37,7 +32,7 @@
             </div>
 
             <div class="md:hidden">
-                <div class="flex flex-col gap-2 text-base">
+                <div class="flex flex-col sm:flex-row gap-2 text-base">
                     <div class="flex flex-row gap-8">
                         <a href="#">Tin tức - Sự kiện</a>
                         <a href="#">Liên hệ</a>
@@ -251,16 +246,13 @@
                             </path>
                         </svg>
                     </div>
-
-
-
                 </div>
 
                 <!-- menu mobile -->
-                <div class="md:hidden absolute left-0 top-[5rem] w-screen h-auto">
-                    <ul class="flex flex-col gap-[2.5rem] items-start pt-[1rem] w-full z-30 bg-mau_xanh uppercase text-mau_trang 
-                                text-base opacity-0 h-0 menuMobile container">
-                        <li class="has__submenu w-full">
+                <div class="md:hidden absolute left-0 top-[5rem] bg-mau_xanh w-full">
+                    <ul class="hidden flex-col gap-[2.5rem] items-start pt-[2rem] w-full z-30 bg-mau_xanh uppercase text-mau_trang 
+                                    text-base menuMobile px-8">
+                        <li class="has__submenu">
                             <div class="flex flex-row nav__link-mobile gap-[2.5rem]">
                                 <a href="#" class="menu-item">Kim chỉ nam du học</a>
                                 <i class="ri-add-line toggle-icon cursor-pointer"></i>
@@ -329,9 +321,7 @@
                             </ul>
                         </li>
                         <li class="px-[20px] py-[10px] pt-4"><a href="#">Liên hệ</a></li>
-                        <!-- <li class="bg-mau_do rounded-md text-mau_trang py-2 px-4">
-                            <a href="#">Apply Now</a>
-                        </li> -->
+
                     </ul>
                 </div>
 
@@ -348,7 +338,7 @@
     </header>
 
     <div id="searchPopup" class="z-50 flex-col w-full hidden fixed top-[20%] left-0 h-full justify-center items-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
+        <div class="content bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
             <div class="flex justify-between items-center mb-4 relative">
                 <h2 class="text-xl font-semibold text-mau_xanh">Tìm kiếm</h2>
                 <button id="closeSearchPopup" class="w-10 h-10 text-xl rounded-full text-mau_trang bg-mau_xanh 
@@ -360,6 +350,7 @@
             </div>
         </div>
     </div>
+
 
     <section class="hero w-full flex bg-hero-pattern bg-no-repeat bg-cover">
         <div
@@ -395,7 +386,7 @@
     </section>
 
     <section
-        class="w-full bg-no-repeat bg-cover mt-[8rem] 2xl:container md:overflow-x-clip md:px-8 2xl:overflow-visible">
+        class="w-full bg-no-repeat bg-cover mt-[8rem] 2xl:container md:overflow-x-clip md:px-8 px-4 2xl:overflow-visible">
         <div class="flex md:flex-row flex-col gap-[3rem] relative justify-center items-center">
             <div class="absolute z-0 -top-[2rem] -right-[2rem] w-[80px] h-[80px]
                         md:-top-[3rem] md:left-[44%]
@@ -455,7 +446,8 @@
         </div>
     </section>
 
-    <section class="lg:mt-[6rem] md:mt-[7rem] lg:container px-8 relative z-20 md:overflow-x-clip 2xl:overflow-visible">
+    <section
+        class="lg:mt-[6rem] md:mt-[7rem] mt-20 lg:container px-8 relative z-20 md:overflow-x-clip 2xl:overflow-visible">
         <img src="img/side_logo.png" alt="image"
             class="absolute -right-[8rem] -top-[4rem] z-0 w-[32%] lg:w-[22%] hidden">
         <h2 class="text-[2rem] md:text-[1.75rem] text-mau_xanh font-bold">Quốc gia du học</h2>
@@ -688,8 +680,8 @@
     <!-- Why choose us -->
     <section class="mt-[5rem] md:mt-[7rem] w-full">
         <div class="text-center mt-[3rem] lg:container md:px-8">
-            <h2 class="text-[2rem] font-semibold text-mau_xanh md:text-[1.75rem]">Cam kết chất lượng dịch vụ tại COSA
-            </h2>
+            <h2 class="text-[2rem] font-semibold text-mau_xanh md:text-[1.75rem] px-8">Cam kết chất lượng dịch vụ tại
+                COSA</h2>
 
         </div>
 
@@ -978,22 +970,22 @@
 
     <section class="mt-[5rem] w-full bg-gradient-to-r from-[#21376d] to-[#121e3c] min-h-36 relative">
 
-        <div class="flex flex-row items-center justify-center min-h-32 text-mau_trang gap-8">
+        <div class="flex md:flex-row flex-col items-center justify-center min-h-32 text-mau_trang gap-8">
 
-            <p class="text-xl">Liên hệ tư vấn MIỄN PHÍ</p>
-            <a href="#" class="bg-mau_do rounded-full px-4 py-2 z-20 font-medium text-xl" id="btnDangKy">ĐĂNG KÝ
-                NGAY</a>
+            <p class="text-xl z-30 mt-2">Liên hệ tư vấn MIỄN PHÍ</p>
+            <a href="#" class="bg-mau_do rounded-full px-4 py-2 z-20 font-medium md:text-xl text-base"
+                id="btnDangKy">ĐĂNG KÝ NGAY</a>
         </div>
         <img src="img/bg_lienhe.png" alt="image" class="absolute inset-0 w-full h-full object-cover z-0">
 
     </section>
 
 
-    <div class="flex md:flex-row flex-col items-center
-                    justify-center 2xl:container py-8 gap-10 bg-mau_trang z-30 container
-                    rounded-xl shadow-lg" id="modalDangKy">
+    <div class="hidden md:flex-row flex-col items-center
+                    justify-center 2xl:container py-8 md:gap-10 gap-6 bg-mau_trang z-30 container
+                    rounded-xl shadow-lg px-8" id="modalDangKy">
         <button id="btnCloseDangKy" class="w-10 h-10 text-xl rounded-full text-mau_trang bg-mau_xanh 
-                                absolute right-0 top-0">&times;</button>
+                                absolute right-8 top-8">&times;</button>
 
         <div class="flex flex-col flex-1">
             <h2 class="text-mau_xanh font-semibold lg:text-[32px]">Đăng ký tư vấn <span class="text-mau_do">MIỄN
