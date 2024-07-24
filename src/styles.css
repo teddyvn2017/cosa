@@ -6,21 +6,68 @@ input[type="checkbox"]:checked {
     /* Màu xám mong muốn khi checked */
 }
 
+/* Search popup */
+#searchPopup {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
 
-#modalDangKy {
-    /* opacity: 0; */
+#searchPopup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hiệu ứng cho phần nội dung của popup */
+#searchPopup .content {
+    transform: translateY(-30px);
+    transition: transform 0.3s ease;
+}
+
+#searchPopup.active .content {
+    transform: translateY(0);
+}
+
+
+/* CSS */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* Đảm bảo popup không hiện khi chưa được kích hoạt */
+    visibility: hidden;
+    /* Ẩn popup khi không kích hoạt */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* z-index: 9999; */
+    /* Đảm bảo popup luôn nằm trên các thành phần khác */
+}
+
+/* Khi popup được kích hoạt */
+.popup.active {
+    opacity: 1;
+    /* Hiển thị popup */
+    visibility: visible;
+    /* Hiển thị popup */
+}
+
+/* dang ky popup */
+/* #modalDangKy {
+    
     transform: translate(-50%, -50%) scale(0.9);
     transition: opacity 0.3s ease, transform 0.4s ease;
     position: fixed;
     top: 50%;
     left: 50%;
     z-index: 50;
+    position: fixed;
 }
 
 #modalDangKy.active {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-}
+} */
 
 .heading__hero {
     font-size: 40px;
@@ -197,6 +244,7 @@ input[type="checkbox"]:checked {
     position: relative;
     width: 100%;
     height: 100%;
+    /* padding: initial; */
 }
 
 
@@ -377,115 +425,25 @@ input[type="checkbox"]:checked {
     opacity: 0;
 }
 
-/* .testimonial {
+.underline__du-hoc {
     position: relative;
-    display:inline-block;
+    display: inline-block;
+    /* cần thiết để canh chỉnh ::before với text */
+    padding-bottom: 5px;
+
+    /* khoảng cách từ text đến underline */
 }
 
-.testimonial::before {
+
+.underline__du-hoc::before {
     content: '';
     position: absolute;
-    left: 0;
-    bottom:-.5rem;
-    height: 2px;
-  
-    width: fit-content;
-    background-color: #6A799D;
-
-
-} */
-/* 
-.swiper:hover .custom-swiper-button-prev,
-.swiper:hover .custom-swiper-button-next {
-    opacity: 1;
-   
-    visibility: visible;
-   
-} */
-
-/* Styles for the submenu */
-
-/* 
-.mobile__menu {
-    position: absolute;
-    top: 6rem;
-    right: -100%;  
-    width: 100vw;
-    height: auto;
-    background-color: #22376e;
-    overflow-x: hidden;
-    transition:0.5s ease;
-    cursor: pointer;
-   
-}
-
-.mobile__menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top:2rem;
-    position: relative;
-    padding: 2rem;
-    transition: 0.5s ease;
-  
-}
-
-.mobile__menu ul li {
-    margin-bottom: 2rem;
-}
-
-.mobile__menu ul li a {
-    font-size: 1.25rem;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.mobile__menu ul li.has__mobile__submenu ul{
-    position: absolute;
-    top:2rem;
-    left: 90%;
-    visibility: visible;
-    margin-top: 0;
-    opacity: 0;
-    transition: 0.5s ease;
-  
-}
-
-.mobile__menu ul li ul li {
-    white-space: nowrap;
+    /* left: 1.5rem; */
+    bottom: 6px;
+    width: 80px;
+    height: 4px;
+    /* độ dày của underline */
+    background-color: #fff;
+    border-radius: 2px;
 
 }
-
-.arrow__left {
-    opacity: 0;
-}
-
-.arrow__left.show {
-    opacity: 1;
-}
-
-
-.btn__back {
-    color: #fff;
-    font-size:1.25rem;
-    display: none;
-}
-
-.btn__back.show {
-    display: block;
-}
-
-.mobile__menu ul.slideOut {
-    transform: translateX(-90%);
-}
-
-
-.mobile__menu ul li.has__mobile__submenu ul.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.mobile__menu.slideIn {
-    right: 0;
-    
-} */

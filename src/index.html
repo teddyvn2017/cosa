@@ -25,22 +25,25 @@
                     <a href="#">Tin tức - Sự kiện</a>
                     <a href="#">Liên hệ</a>
                     <div class="flex flex-row gap-2">
-                        <i class="ri-phone-line"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="rgba(255,255,255,1)">
+                            <path
+                                d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z">
+                            </path>
+                        </svg>
                         <p>0903.095.091</p>
                     </div>
                 </div>
             </div>
 
-            <div class="md:hidden">
-                <div class="flex flex-col sm:flex-row gap-2 text-base">
-                    <div class="flex flex-row gap-8">
-                        <a href="#">Tin tức - Sự kiện</a>
-                        <a href="#">Liên hệ</a>
-                    </div>
-                    <div class="flex flex-row gap-2">
-                        <i class="ri-phone-line"></i>
-                        <p>0903.095.091</p>
-                    </div>
+            <div class="md:hidden flex flex-col gap-1 w-full">
+                <div class="flex flex-row gap-8 mx-auto">
+                    <a href="#">Tin tức - Sự kiện</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="flex flex-row gap-2 mx-auto">
+                    <i class="ri-phone-line"></i>
+                    <p>0903.095.091</p>
                 </div>
             </div>
         </div>
@@ -454,7 +457,7 @@
             <div class="custom-swiper-button-prev top-[15rem] md:top-[11rem] lg:top-[12rem] xl:top-[13rem]">
                 <i class="ri-arrow-left-s-line arrow__left"></i>
             </div>
-            <div class="swiper mt-[1.25rem] flex flex-col md:flex-row py-[2rem] justify-center">
+            <div class="swiper mt-[1.25rem] flex flex-col md:flex-row py-8 justify-center">
 
                 <div class="swiper-wrapper text-base xl:text-xl">
                     <div
@@ -759,8 +762,7 @@
                     bg-mau_xanh_50 rounded-full"></div>
             <div class="flex flex-col md:flex-row gap-[4rem] justify-center align-center relative z-30">
                 <div class="flex flex-col basis-2/4">
-                    <!-- <h2 class="text-mau_xanh_300 text-2xl font-light">Khách hàng cảm nhận chất lượng dịch vụ của COSA</h2> -->
-                    <!-- <h2 class="text-mau_xanh_300 text-2xl font-light underline underline-offset-8">TESTIMONIAL</h2> -->
+
                     <h2 class="text-mau_xanh font-bold text-[2rem] md:text-[1.5rem] mb-[1.25rem]">Khách hàng đánh giá
                         dịch
                         vụ
@@ -813,7 +815,7 @@
                                                     bg-mau_hong_50 rounded-full" id="mau_hong_to"></div>
         </div>
 
-        <div class="2xl:container mt-[14rem] container relative z-30 md:mt-[16rem]">
+        <div class="2xl:container mt-[14rem] relative z-30 md:mt-[16rem]">
             <h2 class="text-[2rem] md:text-[1.75rem] text-mau_do text-center font-bold">Tin tức và sự kiện du học</h2>
             <div class="flex md:flex-row flex-col mt-[2rem]">
                 <div class="flex flex-col lg:flex-row gap-[32px]">
@@ -838,14 +840,13 @@
                         </p>
                     </div>
 
-                    <div class="flex flex-col gap-[2rem]" id="cot_phai">
-
-                        <div class="h-fit bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle 
+                    <div class="flex flex-col gap-[2rem] h-fit" id="cot_phai">
+                        <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle 
                                                 gap-[2rem] p-[1rem] shadow-sm rounded-[12px]">
                             <div class="relative">
-                                <img src="img/news1.png" alt="image" class="rounded-[8px] w-full h-full aspect-auto">
+                                <img src="img/news1.png" alt="image" class="rounded-[8px] w-full aspect-auto">
                                 <p
-                                    class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
+                                    class="absolute right-[1.25rem] bottom-8 bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
                                     Blog
                                 </p>
                             </div>
@@ -871,9 +872,9 @@
                         <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
                                                     shadow-sm rounded-[12px] h-fit">
                             <div class="relative">
-                                <img src="img/news2.jpg" alt="image" class="rounded-[8px] w-full h-full">
+                                <img src="img/news2.jpg" alt="image" class="rounded-[8px] w-full">
                                 <p
-                                    class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
+                                    class="absolute right-[1.25rem] bottom-8 bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
                                     Blog
                                 </p>
                             </div>
@@ -895,11 +896,11 @@
                         </div>
 
                         <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
-                                                                            shadow-sm  rounded-[12px]">
+                                                                            shadow-sm rounded-[12px]">
                             <div class="relative">
-                                <img src="img/news3.jpg" alt="image" class="rounded-[8px] w-full h-full">
+                                <img src="img/news3.jpg" alt="image" class="rounded-[8px] w-full">
                                 <p
-                                    class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
+                                    class="absolute right-[1.25rem] bottom-8 bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
                                     Blog
                                 </p>
                             </div>
@@ -913,8 +914,7 @@
                                     duis
                                     accumsan.
                                 </p>
-                                <!-- <a href="#" class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
-                                                                            w-fit justify-start rounded-[0.5rem] mt-[1rem]">Đọc tiếp</a> -->
+
                                 <p
                                     class="font-semibold text-base underline text-mau_xanh mt-[0.75rem] underline-offset-8">
                                     Đọc tiếp
@@ -927,115 +927,9 @@
 
             </div>
         </div>
-
-
     </section>
 
-    <!-- <section class="mt-[14rem] container relative z-30 md:mt-[10rem]">
 
-       <h2 class="text-[2rem] md:text-[1.75rem] text-mau_do text-center font-bold">Tin tức và sự kiện du học</h2>
-        <div class="flex md:flex-row flex-col mt-[2rem]">
-            <div class="flex flex-col lg:flex-row gap-[32px]">
-                <div class="flex flex-col md:basis-2/4 shadow-lg p-[1rem] rounded-[1rem] bg-mau_trang w-full h-fit" id="cot_trai">
-                    
-                    <img src="img/hot_news.jpg" alt="image" class="rounded-[1rem] shadow-md">
-                    
-                    <button class="text-mau_trang bg-mau_do px-[1.25rem] py-[.5rem]
-                            w-fit justify-start rounded-[.5rem] mt-[1rem]">TIN TỨC</button>
-                    <h3 class="text-mau_xanh font-bold mt-[1.25rem] text-xl md:text-[1.5rem] mb-[1.5rem]">
-                        Lorem ipsum dolor sit amet consectetur. posuere cras purus.
-                    </h3>
-                    <p class="text-mau_xanh text-base leading-5">
-                        Lorem ipsum dolor sit amet consectetur. Ut aliquet imperdiet nullam a mi mattis commodo
-                        vitae sit.
-                        Enim ullamcorper
-                        aliquet tristique eget etiam aliquet.
-                    </p>
-                    <p class="font-semibold text-base underline text-mau_xanh mt-[2rem] underline-offset-8">
-                        Đọc tiếp
-                    </p>
-                </div>
-
-                <div class="flex flex-col gap-[2rem]" id="cot_phai">
-
-                    <div class="h-fit bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle 
-                            gap-[2rem] p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px]">
-                        <div class="relative">
-                            <img src="img/news1.png" alt="image" class="rounded-[8px] w-full h-full aspect-auto">
-                            <p class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
-                                Blog
-                            </p>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem] lg:text-[1.25rem]">Lorem ipsum dolor sit amet consectetur.
-                            </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
-                                Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
-                                duis
-                                accumsan.
-                            </p>
-                            
-                            <p class="font-semibold text-base underline underline-offset-8 text-mau_xanh mt-[0.75rem]">
-                                Đọc tiếp
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
-                                shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px] h-fit">
-                        <div class="relative">
-                            <img src="img/news2.jpg" alt="image" class="rounded-[8px] w-full h-full">
-                            <p
-                                class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
-                                Blog
-                            </p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem] lg:text-[1.25rem]">Lorem ipsum dolor sit amet consectetur.
-                            </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
-                                Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
-                                duis
-                                accumsan.
-                            </p>
-                            
-                           
-                            <p class="font-semibold text-base underline text-mau_xanh mt-[0.75rem] underline-offset-8">
-                                Đọc tiếp
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-mau_trang flex flex-col md:flex-row md:basis-2/4 justify-center align-middle gap-[2rem] p-[1rem] 
-                                                        shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[12px]">
-                        <div class="relative">
-                            <img src="img/news3.jpg" alt="image" class="rounded-[8px] w-full h-full">
-                            <p
-                                class="absolute right-[1.25rem] bottom-[1rem] bg-mau_do text-mau_trang uppercase px-[0.5rem] py-[0.25rem] rounded-[0.5rem]">
-                                Blog
-                            </p>
-                        </div>
-                        <div class="flex flex-col">
-                            <h3 class="text-mau_xanh font-semibold text-xl md:text-[1.5rem]  lg:text-[1.25rem]">Lorem ipsum dolor sit amet consectetur.
-                            </h3>
-                            <p class="text-mau_xanh text-base leading-7 mt-[.25rem] pb-[1rem]">
-                                Lorem ipsum dolor sit amet consectetur. Vitae feugiat nisi etiam sapien ultrices
-                                duis
-                                accumsan.
-                            </p>
-                        
-                            <p class="font-semibold text-base underline text-mau_xanh mt-[0.75rem] underline-offset-8">
-                                Đọc tiếp
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>     -->
 
     <section class="mt-[5rem] relative container">
         <h2 class="text-2xl text-mau_xanh font-bold w-full text-center mb-[1.5rem] md:text-[1.75rem]">Trường đối tác
