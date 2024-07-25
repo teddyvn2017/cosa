@@ -2,14 +2,14 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Đăng ký tư vấn</title>
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-<link href="./output.css" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tư vấn</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link href="./output.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="font-sans">
@@ -337,16 +337,18 @@
         <!-- Main menu -->
     </header>
 
-    <div class="flex md:flex-row flex-col items-center
-                                justify-center 2xl:container py-8 gap-8 xl:gap-12 bg-mau_trang z-50 px-8" id="modalDangKy">
-    
-    
-        <div class="flex flex-col flex-1">
-            <h2 class="text-mau_xanh font-semibold lg:text-[32px]">Đăng ký tư vấn <span class="text-mau_do">MIỄN PHÍ</span>
+    <div class="flex lg:flex-row flex-col items-start justify-center 2xl:container mt-8 py-8 gap-8 xl:gap-12 bg-mau_trang px-8"
+        id="modalDangKy">
+
+
+        <div class="flex flex-col flex-1 w-full">
+            <h2 class="text-mau_xanh font-semibold lg:text-[32px]">Đăng ký tư vấn <span class="text-mau_do">MIỄN
+                    PHÍ</span>
             </h2>
-            <p class="leading-normal text-mau_xanh mt-[1rem] text-xl">Hãy chia sẽ thông tin liên hệ của bạn để được Chuyên
+            <p class="leading-normal text-mau_xanh mt-[1rem] text-xl">Hãy chia sẽ thông tin liên hệ của bạn để được
+                Chuyên
                 gia COSA tư vấn quốc gia du học, trường học, ngành học phù hợp và học bổng</p>
-    
+
             <div class="mt-10 lg:text-xl">
                 <form id="dang_ky_tu_van" method="post">
                     <div class="my-4 pb-4">
@@ -357,7 +359,6 @@
                                 id="ho_ten" name="ho_ten" type="text" placeholder="Họ tên">
                         </label>
                     </div>
-    
                     <div class="my-4 pb-4">
                         <label for="email" class="flex items-center border-b-2 border-gray-300 py-2 gap-4">
                             <i class="ri-mail-line text-gray-400"></i>
@@ -366,7 +367,6 @@
                                 id="email" name="email" type="text" placeholder="Email">
                         </label>
                     </div>
-    
                     <div class="my-4 pb-4">
                         <label for="phone" class="flex items-center border-b-2 border-gray-300 py-2 gap-4">
                             <i class="ri-smartphone-line text-gray-400"></i>
@@ -375,19 +375,17 @@
                                 id="dien_thoai" name="dien_thoai" type="text" placeholder="Điện thoại">
                         </label>
                     </div>
-    
                     <div class="my-4 pb-4">
                         <label for="nation" class="flex items-center border-b-2 border-gray-300 py-2 gap-4">
                             <i class="ri-earth-line text-gray-400"></i>
                             <input
                                 class="appearance-none bg-transparent border-none w-full text-mau_xanh focus:outline-none focus:border-mau_do"
-                                id="quoc_gia" name="quoc_gia" type="text" placeholder="Bạn quan tâm quốc gia du học nào?">
+                                id="quoc_gia" name="quoc_gia" type="text"
+                                placeholder="Bạn quan tâm quốc gia du học nào?">
                         </label>
                     </div>
-    
                     <div class="my-4 pb-4">
                         <label for="bac_hoc" class="flex items-center border-b-2 border-gray-300 py-2 gap-4">
-    
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                                 fill="rgba(156,163,175,1)">
                                 <path d="M15 3H21V21H3V15H7V11H11V7H15V3ZM17 5V9H13V13H9V17H5V19H19V5H17Z"></path>
@@ -397,7 +395,6 @@
                                 id="bac_hoc" name="bac_hoc" type="text" placeholder="Bậc học quan tâm">
                         </label>
                     </div>
-    
                     <div class="my-4 pb-4">
                         <label for="time" class="flex items-center border-b-2 border-gray-300 py-2 gap-4">
                             <i class="ri-time-line text-gray-400"></i>
@@ -406,33 +403,30 @@
                                 id="thoi_diem" name="thoi_diem" type="text" placeholder="Thời điểm du học của bạn">
                         </label>
                     </div>
-    
                     <div class="flex items-center mt-10 cursor-pointer">
                         <input id="dong_y" name="dong_y" type="checkbox" value="" checked
                             class="w-4 h-4 text-mau_xanh bg-gray-300 border-gray-300 rounded">
-                        <label for="link-checkbox1" class="ms-2 font-medium text-gray-400 text-base cursor-pointer">
-                            Tôi đồng ý với <a href="#" class="underline underline-offset-4 text-mau_xanh">điều khoản và
-                                chính sách bảo
-                                mật</a> của COSA
-                        </label>
+                        <label for="link-checkbox1" class="ms-2 font-medium text-gray-400 text-base cursor-pointer">Tôi
+                            đồng
+                            ý với <a href="#" class="underline underline-offset-4 text-mau_xanh">điều khoản và chính
+                                sách
+                                bảo mật</a> của COSA</label>
                     </div>
-    
                     <div class="flex items-center mt-4">
                         <input id="lien_lac_dt" name="lien_lac_dt" type="checkbox" value="" checked
                             class="w-4 h-4 text-mau_xanh bg-gray-300 border-gray-300 rounded">
-                        <label for="link-checkbox2" class="ms-2 font-medium text-gray-400 text-base cursor-pointer">
-                            COSA liên hệ với tôi qua điện thoại, email hoặc SMS để tư vấn
-                        </label>
+                        <label for="link-checkbox2" class="ms-2 font-medium text-gray-400 text-base cursor-pointer">COSA
+                            liên hệ với tôi qua điện thoại, email hoặc SMS để tư vấn</label>
                     </div>
                     <a href="#" id="btnDangKy"
-                        class="rounded-xl uppercase text-mau_trang text-xl w-full bg-mau_do py-4 mt-8 font-semibold block text-center">
-                        Đăng ký ngay
-                    </a>
+                        class="rounded-xl uppercase text-mau_trang text-xl w-full bg-mau_do py-4 mt-8 font-semibold block text-center">Đăng
+                        ký ngay</a>
                 </form>
             </div>
-    
-            <div class="flex flex-row justify-between items-center mt-8">
-                <div class="flex flex-row justify-center items-center gap-4">
+
+            <div class="flex md:flex-row flex-col justify-between lg:items-center items-start mt-8 gap-4">
+
+                <div class="flex flex-row md:justify-center lg:items-center gap-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
                         fill="rgba(42,78,134,1)">
                         <path
@@ -440,29 +434,25 @@
                         </path>
                     </svg>
                     <div class="flex flex-col uppercase text-sm">
-                        <p class="text-mau_xanh font-semibold">
-                            HOTLINE
-                        </p>
+                        <p class="text-mau_xanh font-semibold">HOTLINE</p>
                         <p class="text-mau_do font-semibold">0903 095 091</p>
                     </div>
                 </div>
-    
-                <div class="flex flex-row justify-center items-center gap-4">
+
+                <div class="flex flex-row md:justify-center lg:items-center gap-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
                         fill="rgba(42,78,134,1)">
                         <path
-                            d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
+                            d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 8.989V6h16l.002 2.989L12 13 4 8.989zM20 18H4v-7.006l8 4.5 8-4.5V18z">
                         </path>
                     </svg>
                     <div class="flex flex-col uppercase text-sm">
-                        <p class="text-mau_xanh font-semibold">
-                            Email
-                        </p>
-                        <p class="text-mau_do font-semibold">info@cosa.edu.vn</p>
+                        <p class="text-mau_xanh font-semibold">Email</p>
+                        <p class="text-mau_do font-semibold">cosa@cosa.edu.vn</p>
                     </div>
                 </div>
-    
-                <div class="flex flex-row justify-center items-center gap-4">
+
+                <div class="flex flex-row md:justify-center lg:items-center gap-4">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
                         fill="rgba(42,78,134,1)">
                         <path
@@ -476,27 +466,22 @@
                         <p class="text-mau_do font-semibold">Tầng 7, 370 CMT8, Quận 3</p>
                     </div>
                 </div>
-            </div>
-    
-            <div class="mt-8">
-                <div class="p-4 mb-4 text-sm text-mau_do rounded-lg bg-red-50" role="alert" id="dang_ky_fail">
-                    <span class="font-medium">Đăng ký!</span> thất bại.
-                </div>
-    
-                <div class="p-4 mb-4 text-sm text-mau_xanh rounded-lg bg-blue-50" role="alert" id="dang_ky_success">
-                    <span class="font-medium">Đăng ký thành công!</span> Chúng tôi sẽ sớm liên hệ với bạn.
-                </div>
+
             </div>
         </div>
-    
-        <div class="flex flex-1 justify-center items-center">
-            <img class="w-full" src="img/map.png" alt="">
+        <div class="flex-1 w-full h-full items-center justify-center">
+            <iframe class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426.3120413933973!2d106.67207951888632!3d10.782707581790607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed6fc2005cf%3A0x88ab4b8f3e248c2e!2zMzcwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMCwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1721495210236!5m2!1svi!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+
+
     </div>
 
 
     <!-- Popup tìm kiếm -->
-    <!-- <div id="searchPopup" class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full hidden translate-y-0">
+    <div id="searchPopup" class="bg-gray-600 bg-opacity-50 z-50 flex-col w-full hidden translate-y-0">
         <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-[70%] mx-auto">
             <div class="flex justify-between items-center mb-4 relative">
                 <h2 class="text-xl font-semibold text-mau_xanh">Tìm kiếm</h2>
@@ -508,7 +493,7 @@
                 <button class="bg-mau_do text-white p-2 rounded-md min-w-[100px]">Tìm kiếm</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <footer class="w-full bg-mau_trang">
         <div class="2xl:container flex flex-col md:flex-row pt-[2rem] pb-[2rem] gap-[3rem] space-between mt-4 px-8">
@@ -609,15 +594,25 @@
         </div>
     </footer>
 
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("#dang_ky_tu_van");
+            const mapIframe = document.querySelector("#modalDangKy iframe");
+
+            if (form && mapIframe) {
+                mapIframe.style.height = form.offsetHeight + "px";
+            }
+        });
+    </script>
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/menu_mobile_anim.js"></script>
-<script src="js/search.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu_mobile_anim.js"></script>
+    <script src="js/search.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/slider.js"></script>
 
 <script src="js/dang_ky.js"></script> -->
