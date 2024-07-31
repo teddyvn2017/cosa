@@ -463,3 +463,25 @@ input[type="checkbox"]:checked {
         transform: translateY(0);
     }
 }
+
+
+.sidebar-menu {
+    width: 300px;
+}
+
+.sidebar-menu.fixed {
+    position: fixed;
+    top: 8rem;
+    /* Cố định trên cùng */
+    /* left: 0; */
+    /* Cố định bên trái */
+    z-index: 20;
+    /* Đặt độ ưu tiên cao hơn để nằm trên các phần tử khác */
+    /* width: 250px; */
+    /* Chiều rộng tùy chỉnh */
+    height: auto;
+    /* Chiều cao toàn màn hình */
+    overflow-y: auto;
+    /* width: 300px; */
+    /* Cuộn dọc nếu cần */
+}
