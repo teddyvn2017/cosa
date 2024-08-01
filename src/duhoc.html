@@ -325,14 +325,37 @@
     </header>
 
     <main>
-        <div class="w-full bg-du-hoc-my bg-no-repeat bg-cover h-[420px] flex justify-start">
+        <div class="w-full bg-du-hoc-my bg-no-repeat bg-cover h-[420px] flex justify-start bg_duhocmy">
             <h1 class="underline__du-hoc text-mau_trang text-[40px] 2xl:container pl-8 self-end pb-8 mb-8 w-fit">Du học
                 Mỹ</h1>
         </div>
 
         <article class="mt-8 text-base 2xl:container px-8 text-gray-700">
-            <div class="flex flex-row mt-12 relative">
-                <div class="sticky top-0 h-screen overflow-auto bg-white sidebar-menu z-10 min-w-[300px]">
+            <div class="flex flex-col lg:flex-row mt-12 relative">
+                <!-- sidebar menu for mobile -->
+                <div class="relative inline-block text-left lg:hidden">
+                    <button id="btnOnThePage"
+                        class="bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg px-4 py-2 w-full text-left flex items-center justify-between">
+                        <span>Trên trang này</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="onThePageMenu"
+                        class="absolute left-0 z-10 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg hidden w-full">
+                        <a href="#section1" class="block py-4 px-4 text-gray-700 hover:bg-gray-100 cursor-pointer">1. Du
+                            học Úc - Bạn hiểu gì về Visa 485?</a>
+                        <a href="#section2" class="block py-4 px-4 text-gray-700 hover:bg-gray-100 cursor-pointer">2.
+                            Cập nhật mới nhất của visa 485</a>
+                        <a href="#section3" class="block py-4 px-4 text-gray-700 hover:bg-gray-100 cursor-pointer">3.
+                            Phân loại Visa 485</a>
+                    </div>
+                </div>
+                <!-- sidebar menu -->
+                <div
+                    class="hidden lg:block sticky top-0 h-screen overflow-auto bg-white sidebar-menu z-10 min-w-[300px]">
                     <h2 class="mb-4 py-4 pl-4">Trên trang này</h2>
                     <div>
                         <ul class="pl-8" id="menu">
@@ -356,16 +379,17 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="min-w-[10%]"></div>
                 <div class="min-w-[65%] text-base leading-loose" id="content">
-                    <p class="py-4 font-light">
+                    <div class="py-4 font-light">
                         Để giải quyết tình trạng thiếu nhân lực, Chính phủ Úc đã đưa ra danh sách định hướng cho các
                         nhóm ngành được gia hạn
                         Visa 485 sau tốt nghiệp. Đồng thời, chính phủ cũng tăng thời gian làm việc cho visa du học và
                         công bố danh sách ngành
                         nghề ưu tiên. Cùng IDP cập nhật những thông tin mới nhất về Visa 485 nhé!
-                    </p>
-                    <p class="py-4 font-light" id="section1">
+                    </div>
+                    <div class="py-4 font-light" id="section1">
                         1. Du học Úc - Bạn hiểu gì về Visa 485?
 
                         Visa 485 là dạng thị thực dành cho cho sinh viên mới tốt nghiệp là một visa việc làm tạm thời
@@ -375,8 +399,8 @@
                         vào chương trình học mà bạn theo học tại Úc. Đây là một cơ hội tốt cho bạn gia hạn thời gian ở
                         lại Úc để tăng thêm khả
                         năng đáp ứng đủ điều kiện cho các dạng thị thực thường trú hoặc thị thực tay nghề khác.
-                    </p>
-                    <p class="py-4 font-light" id="section2">
+                    </div>
+                    <div class="py-4 font-light" id="section2">
                         2. Cập nhật mới nhất của visa 485
                         2.1 Tăng thời gian hiệu lực của Visa Temporary Graduate
 
@@ -406,10 +430,44 @@
                         thị thực làm việc sau tốt nghiệp, bao gồm 5 năm với chính sách mới và 1 năm khi học ở các khu
                         vực trên (vui lòng liên hệ
                         IDP để kiểm tra về khu vực regional)
-                    </p>
-                    <p id="section3">
-                        3. Phân loại Visa 485
-                    </p>
+                    </div>
+
+                    <div class="py-4 font-light" id="section3">
+                        <p>
+                            3. Phân loại Visa 485
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel efficitur arcu, semper
+                            pretium dolor. Praesent nec
+                            rhoncus quam. Vivamus at viverra tortor, et malesuada diam. In id erat mauris. Fusce et
+                            aliquet enim. Sed rutrum congue
+                            dolor, eget mattis urna rhoncus at. Nam sed arcu euismod odio gravida aliquet at in tortor.
+                            Suspendisse interdum varius
+                            ipsum eu imperdiet. Mauris vitae molestie felis. Aliquam ullamcorper, dui quis sodales
+                            laoreet, libero nibh laoreet
+                            metus, in suscipit justo dolor quis ex. Vivamus bibendum molestie finibus. Cras facilisis,
+                            odio tincidunt dapibus
+                            imperdiet, diam ipsum molestie risus, eu ullamcorper tortor ipsum at ipsum.
+                        </p>
+
+                        <p>
+                            Nulla odio lectus, laoreet at purus sit amet, dapibus scelerisque sapien. Proin sit amet
+                            purus mollis, ultricies libero
+                            eget, tempor nisl. Sed pellentesque ipsum quis est venenatis condimentum. Nam vulputate
+                            ipsum vel felis auctor, et
+                            vulputate orci dignissim. Morbi ornare sapien rutrum orci cursus, sagittis tempus justo
+                            pretium. Morbi in libero at
+                            velit volutpat consectetur finibus id erat. Aenean congue aliquet erat, porta tempus sem
+                            gravida in. Aliquam erat
+                            volutpat. Quisque sit amet auctor velit. Nullam suscipit, ipsum eu faucibus lacinia, est
+                            nisl facilisis turpis, vel
+                            pellentesque odio nulla eu elit. Nam sed porttitor massa, at commodo ipsum. Cras ac ex vitae
+                            odio rhoncus euismod sit
+                            amet ac risus. Proin commodo nunc non neque iaculis fringilla.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </article>
@@ -524,9 +582,6 @@
         </div>
     </footer>
 
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
     <script src="js/menu.js"></script>
@@ -542,9 +597,7 @@
             const items = document.querySelectorAll('#menu li');
             const sections = document.querySelectorAll('#content p');
 
-            let scrollPosition = window.scrollY + window.innerHeight / 4;
-            console.log(scrollPosition);
-
+            let scrollPosition = window.scrollY + window.innerHeight / 2;
             sections.forEach((section, index) => {
                 const sectionTop = section.offsetTop;
                 const sectionBottom = sectionTop + section.offsetHeight;
@@ -559,27 +612,43 @@
         });
 
 
-
         document.addEventListener('scroll', function () {
             const sidebarMenu = document.querySelector('.sidebar-menu');
             const headerHeight = document.querySelector('header').offsetHeight;
+            const bgHeight = document.querySelector('.bg_duhocmy').offsetHeight;
 
-            if (window.scrollY > headerHeight + 280) {
+            if (window.scrollY > headerHeight + bgHeight) {
                 sidebarMenu.classList.add('fixed');
 
                 document.querySelector('#content').style.marginLeft = sidebarMenu.offsetWidth + 'px';
-                // Lấy chiều rộng thực tế của sidebar bao gồm padding, border và margin nếu cần
-                // const sidebarStyle = getComputedStyle(sidebarMenu);
-                // const sidebarWidth = sidebarMenu.offsetWidth;
-                // const sidebarPadding = parseFloat(sidebarStyle.paddingLeft) + parseFloat(sidebarStyle.paddingRight);
-
-                // // Cập nhật margin-left của nội dung
-                // document.querySelector('#content').style.marginLeft = (sidebarWidth + sidebarPadding) + 'px';
             } else {
                 sidebarMenu.classList.remove('fixed');
                 document.querySelector('#content').style.marginLeft = '0';
             }
         });
+
+
+        document.getElementById('btnOnThePage').addEventListener('click', function () {
+            var menu = document.getElementById('onThePageMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#onThePageMenu a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault();  // Ngăn chặn hành vi mặc định của liên kết
+
+                var targetId = this.getAttribute('href').substring(1);  // Lấy id từ href
+                var targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });  // Cuộn đến phần tử
+                }
+
+                // Đóng menu dropdown sau khi chọn
+                document.getElementById('dropdownMenu').classList.add('hidden');
+            });
+        });
+
     </script>
 </body>
 
